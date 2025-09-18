@@ -1,5 +1,9 @@
 # wedding-website
 
+## Template
+
+[YouTube Link](https://www.youtube.com/watch?feature=shared&v=jgwVrgZM4Gk&themeRefresh=1)
+
 ## Pages needed
 
 - home
@@ -10,6 +14,10 @@
 - faqs
 - registry
 - RSVP page
+
+## Packages
+
+- Burger menu from [GitHub](https://github.com/jorisBarkema/svelte-burger-menu).
 
 ## Default docs
 
