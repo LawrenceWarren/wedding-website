@@ -1,4 +1,17 @@
-# sv
+# wedding-website
+
+## Pages needed
+
+- home
+- page with timeline
+- accommodation
+- attire
+- travel
+- faqs
+- registry
+- RSVP page
+
+## Default docs
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
