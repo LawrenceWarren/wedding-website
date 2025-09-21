@@ -1,1 +1,1 @@
-<h1>Welcome to the accommodation page</h1>
+<h1>Accommodation</h1>

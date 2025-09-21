@@ -1,4 +1,4 @@
-<h1>Welcome to the timeline page</h1>
+<h1>Timeline</h1>
 
 <h2>Show up</h2>
 <h2>Get married</h2>

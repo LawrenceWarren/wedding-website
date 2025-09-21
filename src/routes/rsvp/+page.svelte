@@ -1,1 +1,1 @@
-<h1>Welcome to the rsvp page</h1>
+<h1>RSVP</h1>

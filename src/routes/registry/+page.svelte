@@ -1,1 +1,1 @@
-<h1>Welcome to the registry page</h1>
+<h1>Registry</h1>
