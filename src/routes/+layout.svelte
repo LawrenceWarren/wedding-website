@@ -28,7 +28,7 @@
   duration="0.1"
   width={"100vw"}
   backgroundColor="rgba(250,250,250,0.5)"
-  burgerColor="white"
+  burgerColor="black"
 >
   <div class="inner_burger">
     <a href="/">Home</a>
@@ -42,9 +42,16 @@
   </div>
 </BurgerMenu>
 
-{@render children?.()}
+<main>
+  {@render children?.()}
+</main>
 
 <style>
+  main {
+    margin: 0 auto;
+    width: clamp(0px, 90vw, 75ch);
+  }
+
   .inner_burger {
     display: flex;
     flex-direction: column; /* stack vertically */

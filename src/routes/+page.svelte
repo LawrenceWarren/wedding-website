@@ -4,7 +4,8 @@
 <div>
   <h1>Jonas & Andy</h1>
 
-  <h2>10th-12th August 2026 - Somerset, UK</h2>
+  <h2>10th-12th August 2026</h2>
+  <h2>Somerset, UK</h2>
 </div>
 
 <p>
@@ -14,7 +15,7 @@
 
 <style>
   div {
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     background-image: url("$lib/assets/random-header.png");
     background-size: cover;
