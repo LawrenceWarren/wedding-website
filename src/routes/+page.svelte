@@ -10,13 +10,10 @@
 </div>
 
 <TextColumn>
-  {#snippet content()}
-    <p>
-      Please join us from <b
-        ><i>August the 10th until August the 12th 2026</i></b
-      > for the wedding of Jonas Pantaleon and Andrew George.
-    </p>
-  {/snippet}
+  <p>
+    Please join us from <b><i>August the 10th until August the 12th 2026</i></b>
+    for the wedding of Jonas Pantaleon and Andrew George.
+  </p>
 </TextColumn>
 
 <style>

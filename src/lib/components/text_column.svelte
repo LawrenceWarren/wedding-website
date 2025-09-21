@@ -1,9 +1,9 @@
 <script>
-  export let content; // snippet
+  let { children } = $props();
 </script>
 
 <div>
-  {@render content?.()}
+  {@render children?.()}
 </div>
 
 <style>
