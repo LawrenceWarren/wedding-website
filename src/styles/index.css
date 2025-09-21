@@ -12,3 +12,16 @@ h2 {
   font-weight: 400;
   font-style: normal;
 }
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Tai Heritage Pro", serif;
+  font-size: 1.25rem;
+}
