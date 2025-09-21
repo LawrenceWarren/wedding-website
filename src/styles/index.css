@@ -1,9 +1,10 @@
 :root {
-  --bg-color: rgb(255, 217, 189);
+  --bg-color: #faf9f6;
   --primary-color: hsl(360, 80%, 45%);
   --secondary-color: hsl(360, 80%, 30%);
   --highlight-color: hsl(360, 80%, 60%);
-  --font-color: hsl(0, 0%, 8%);
+  --font-color: #121212;
+  --font-light: #faf9f6;
 }
 
 h1,
@@ -11,6 +12,7 @@ h2 {
   font-family: "Petit Formal Script", "Lucida Handwriting", cursive;
   font-weight: 400;
   font-style: normal;
+  color: var(--font-color);
 }
 
 h1 {

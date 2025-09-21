@@ -35,7 +35,8 @@
     flex-direction: column;
   }
 
-  h1 {
-    color: white;
+  h1,
+  h2 {
+    color: var(--font-light);
   }
 </style>
