@@ -1,4 +1,5 @@
 <script>
+  import TextColumn from "$lib/components/text_column.svelte";
 </script>
 
 <div>
@@ -8,10 +9,15 @@
   <h2>Somerset, UK</h2>
 </div>
 
-<p>
-  Please join us from <b><i>August the 10th until August the 12th 2026</i></b> for
-  the wedding of Jonas Pantaleon and Andrew George.
-</p>
+<TextColumn>
+  {#snippet content()}
+    <p>
+      Please join us from <b
+        ><i>August the 10th until August the 12th 2026</i></b
+      > for the wedding of Jonas Pantaleon and Andrew George.
+    </p>
+  {/snippet}
+</TextColumn>
 
 <style>
   div {

@@ -47,11 +47,6 @@
 </main>
 
 <style>
-  main {
-    margin: 0 auto;
-    width: clamp(0px, 90vw, 75ch);
-  }
-
   .inner_burger {
     display: flex;
     flex-direction: column; /* stack vertically */
