@@ -27,3 +27,7 @@ p {
   font-family: "Tai Heritage Pro", serif;
   font-size: 1rem;
 }
+
+body {
+  background-color: var(--bg-color);
+}

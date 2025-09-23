@@ -1,4 +1,5 @@
 <script lang="ts">
+  import "/src/styles/index.css";
   import favicon from "$lib/assets/favicon.svg";
   import BurgerMenu from "svelte-burger-menu";
 
