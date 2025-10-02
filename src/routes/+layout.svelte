@@ -1,6 +1,6 @@
 <script lang="ts">
   import "/src/styles/index.css";
-  import favicon from "$lib/assets/favicon.svg";
+  import favicon from "$lib/assets/favicon.ico";
   import BurgerMenu from "svelte-burger-menu";
 
   let innerWidth = $state(0);
