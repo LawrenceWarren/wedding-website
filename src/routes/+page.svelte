@@ -2,6 +2,14 @@
   import TextColumn from "$lib/components/text_column.svelte";
 </script>
 
+<svelte:head>
+  <title>Jonas' & Andrew's wedding 2026</title>
+  <meta
+    name="description"
+    content="The website for the wedding of Jonas Pantaleon and Andrew George at North Cadbury Court, Somerset, from August 10th until August 12th 2026."
+  />
+</svelte:head>
+
 <div>
   <h1>Jonas & Andy</h1>
 

@@ -3,6 +3,14 @@
   import TextColumn from "$lib/components/text_column.svelte";
 </script>
 
+<svelte:head>
+  <title>Jonas' & Andrew's wedding - Accommodation</title>
+  <meta
+    name="description"
+    content="Information about where you can stay for Jonas' and Andrew's wedding."
+  />
+</svelte:head>
+
 <img src={img} alt="The exterior of North Cadbury Court" />
 
 <TextColumn>

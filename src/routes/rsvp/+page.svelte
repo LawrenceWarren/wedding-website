@@ -147,6 +147,14 @@
   }
 </script>
 
+<svelte:head>
+  <title>Jonas' & Andrew's wedding - RSVP</title>
+  <meta
+    name="description"
+    content="A form to let Jonas and Andrew know if you will be able to attend their wedding, and any additional requirements you may have."
+  />
+</svelte:head>
+
 <h1>RSVP</h1>
 
 <form
@@ -330,26 +338,6 @@
 
   <div class="form-actions">
     <button type="submit">Submit RSVP</button>
-    <button
-      type="button"
-      on:click={() => {
-        fullName =
-          email =
-          phone =
-          arriveDate =
-          arriveTime =
-          leaveDate =
-          leaveTime =
-          accommodationComments =
-          meal =
-          dietaryOther =
-            "";
-        attendance = accommodation = coach = "";
-        submitted = false;
-        formError = "";
-        for (const k of Object.keys(selectedCommon)) selectedCommon[k] = false;
-      }}>Reset</button
-    >
   </div>
 </form>
 
@@ -365,67 +353,133 @@
     max-width: 700px;
     margin: 0 auto;
     padding: 1.5rem;
-    background: #fff;
+    background: #fff; /*TODO: Choose a different white*/
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
+
   .form-group {
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
   }
+
   fieldset {
     margin-top: 1rem;
     padding: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc; /*TODO: Choose a different color*/
     border-radius: 6px;
   }
+
+  legend,
   .legend_label {
     font-weight: bold;
   }
-  legend {
-    font-weight: bold;
-  }
+
   label {
     display: block;
     margin-top: 0.5rem;
   }
-  input,
+
+  input:not([type="radio"]):not([type="checkbox"]),
   select,
   textarea,
   button {
     margin-top: 0.25rem;
     padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #ccc; /*TODO: Choose a different color*/
+    border-radius: 6px;
     font-size: 1rem;
+    line-height: 1.2;
+    min-height: 2.5rem; /* fixes Safari iOS */
+    box-sizing: border-box;
+    background-color: #fff; /*TODO: Choose a different color*/
+    font-family: inherit;
   }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+    transform: scale(1.1);
+    vertical-align: middle;
+    accent-color: var(--highlight-color);
+  }
+
   textarea {
     width: 100%;
-    box-sizing: border-box;
+    resize: vertical;
   }
+
+  select {
+    width: 100%;
+    appearance: none; /* removes inconsistent native arrows */
+  }
+
+  input[type="time"] {
+    width: 100%; /* compact size */
+    height: 1.5rem;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: var(--primary-color); /* TODO: Choose primary color */
+    outline: none;
+    box-shadow: 0 0 0 2px var(--highlight-color); /* TODO: Choose highlight color */
+  }
+
+  input:hover,
+  select:hover,
+  textarea:hover {
+    border-color: var(--secondary-color);
+  }
+
   .nested-group {
     margin-left: 1.5rem;
     margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-right: 1.5rem;
   }
+
+  .nested-group label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-style: italic;
+  }
+
   .form-actions {
     margin-top: 1.5rem;
     display: flex;
     gap: 1rem;
   }
+
   button {
     cursor: pointer;
+    background: var(--highlight-color);
+    color: #fff; /*TODO: Choose a different color*/
+    border: none;
+    border-radius: 6px;
+    transition: background 0.2s ease;
   }
+
+  button:hover {
+    background: var(--primary-color);
+  }
+
   .error {
-    color: #b91c1c;
+    color: var(--highlight-color);
     margin-bottom: 1rem;
   }
+
   .submission-preview {
     max-width: 700px;
     margin: 1.5rem auto;
     padding: 1rem;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
+    background: #f9f9f9; /*TODO: Pick other white*/
+    border: 1px solid #ddd; /*TODO: Pick other white*/
     border-radius: 6px;
   }
 </style>
