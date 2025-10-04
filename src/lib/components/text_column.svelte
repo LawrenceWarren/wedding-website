@@ -10,5 +10,6 @@
   div {
     margin: 0 auto;
     width: clamp(0px, 90vw, 75ch);
+    position: relative;
   }
 </style>
