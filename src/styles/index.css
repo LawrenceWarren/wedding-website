@@ -16,11 +16,17 @@ a {
   color: var(--font-color);
 }
 
+li {
+  font-family: "Poppins", "Lucida Handwriting", cursive;
+}
+
 h1,
 h2 {
   font-family: "Poppins", "Lucida Handwriting", cursive;
   font-style: normal;
   color: var(--font-color);
+  text-align: center;
+  white-space: pre-wrap;
 }
 
 h1 {
