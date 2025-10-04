@@ -56,4 +56,8 @@
   a {
     font-size: 2em;
   }
+
+  main {
+    padding-bottom: 10vh;
+  }
 </style>

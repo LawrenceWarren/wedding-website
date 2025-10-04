@@ -53,9 +53,9 @@
 
   <p>Please contact us for any more queries!</p>
   <address>
-    <b>Andy</b> - <a href="tel:+447910678521">07910678521</a>
+    <b>Andrew</b> - <a href="tel:+447910678521">07910 678521</a>
   </address>
   <address>
-    <b>Jonas</b> - <a href="tel:+447894563744">07894563744</a>
+    <b>Jonas</b> - <a href="tel:+447894563744">07894 563744</a>
   </address>
 </TextColumn>

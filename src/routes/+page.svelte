@@ -11,10 +11,11 @@
 </svelte:head>
 
 <div>
-  <h1>Jonas & Andy</h1>
+  <h1>Jonas & Andrew</h1>
 
-  <h2>10th-12th August 2026</h2>
-  <h2>Somerset, UK</h2>
+  <h2>10th-12th August, 2026 · Somerset, England</h2>
+
+  <a href="/rsvp" class="rsvp-button">RSVP</a>
 </div>
 
 <TextColumn>
@@ -46,5 +47,15 @@
   h1,
   h2 {
     color: var(--font-light);
+  }
+
+  .rsvp-button {
+    display: inline-block;
+    color: var(--font-light);
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1rem;
+    border: 1px solid var(--bg-color);
+    padding: 2vh 5vw; /* lots of padding (adjust as needed) */
   }
 </style>

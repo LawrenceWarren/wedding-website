@@ -7,24 +7,34 @@
   --font-light: #faf9f6;
 }
 
+b {
+  font-family: "Poppins";
+}
+
+a {
+  font-family: "Poppins";
+  color: var(--font-color);
+}
+
 h1,
 h2 {
-  font-family: "Petit Formal Script", "Lucida Handwriting", cursive;
-  font-weight: 400;
+  font-family: "Poppins", "Lucida Handwriting", cursive;
   font-style: normal;
   color: var(--font-color);
 }
 
 h1 {
+  font-weight: 400;
   font-size: 2rem;
 }
 
 h2 {
   font-size: 1.5rem;
+  font-weight: 300;
 }
 
 p {
-  font-family: "Tai Heritage Pro", serif;
+  font-family: "Poppins", serif;
   font-size: 1rem;
 }
 
