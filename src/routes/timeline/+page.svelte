@@ -26,6 +26,7 @@
 
   <h2>Monday, 10th August</h2>
   <ul>
+    <li>1pm - Guests start arriving</li>
     <li>5pm - Filipino welcome dinner</li>
     <li>8:30pm - Games night</li>
   </ul>
@@ -38,5 +39,6 @@
   <h2>Wednesday, 12th August</h2>
   <ul>
     <li>11:30-1:00pm - Farewell pizza lunch</li>
+    <li>2pm - Guests to leave the premises</li>
   </ul>
 </TextColumn>
