@@ -25,10 +25,11 @@
 
 <BurgerMenu
   padding={"25px"}
-  duration="0.1"
+  duration="0.25"
   width={"100vw"}
-  backgroundColor="rgba(250,250,250,0.5)"
-  burgerColor="black"
+  backgroundColor="var(--bg-color)"
+  burgerColor="var(--font-color)"
+  menuColor="var(--font-color)"
 >
   <div class="inner_burger">
     <a href="/">Home</a>
@@ -49,8 +50,8 @@
 <style>
   .inner_burger {
     display: flex;
-    flex-direction: column; /* stack vertically */
-    align-items: center; /* center horizontally */
+    flex-direction: column;
+    align-items: center;
   }
 
   a {
@@ -59,5 +60,6 @@
 
   main {
     padding-bottom: 10vh;
+    z-index: 0;
   }
 </style>
