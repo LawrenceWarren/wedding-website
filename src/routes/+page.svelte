@@ -36,9 +36,9 @@
   </h1>
 
   <div class="photo-grid">
-    <img src={smiling_image} alt="Photo" />
-    <img src={ring_image} alt="Photo" />
-    <img src={kiss_image} alt="Photo" />
+    <img src={smiling_image} alt="Andy and Jonas smiling" />
+    <img src={ring_image} alt="The wedding ring on Jonas' finger" />
+    <img src={kiss_image} alt="Andy and Jonas kissing after getting engaged" />
   </div>
 </div>
 
