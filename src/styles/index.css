@@ -39,6 +39,10 @@ h2 {
   font-weight: 300;
 }
 
+h3 {
+  font-family: "Poppins", serif;
+}
+
 p {
   font-family: "Poppins", serif;
   font-size: 1rem;

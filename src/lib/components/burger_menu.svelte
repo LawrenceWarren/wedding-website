@@ -1,5 +1,8 @@
 <script>
   import BurgerMenu from "svelte-burger-menu";
+
+  export let burgerColor = "var(--font-color)";
+  export let menuColor = "var(--font-color)";
 </script>
 
 <BurgerMenu
@@ -7,8 +10,8 @@
   duration="0.25"
   width={"100vw"}
   backgroundColor="var(--bg-color)"
-  burgerColor="var(--font-color)"
-  menuColor="var(--font-color)"
+  {burgerColor}
+  {menuColor}
 >
   <div style="display: flex; flex-direction: column; align-items: center;">
     <a style="font-size: 2em" href="/">Home</a>
