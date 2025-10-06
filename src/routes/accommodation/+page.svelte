@@ -1,6 +1,7 @@
 <script>
   import img from "$lib/assets/exterior-north-cadbury-court.webp";
   import TextColumn from "$lib/components/text_column.svelte";
+  import BurgerMenu from "$lib/components/burger_menu.svelte";
 </script>
 
 <svelte:head>
@@ -12,6 +13,8 @@
 </svelte:head>
 
 <img src={img} alt="The exterior of North Cadbury Court" />
+
+<BurgerMenu />
 
 <TextColumn>
   <h1>Accommodation</h1>

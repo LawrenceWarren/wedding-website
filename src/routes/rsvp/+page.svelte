@@ -1,5 +1,7 @@
 <script lang="ts">
+  import BurgerMenu from "$lib/components/burger_menu.svelte";
   import { onMount } from "svelte";
+
   let fullName = "";
   let email = "";
   let phone = "";
@@ -154,6 +156,8 @@
     content="A form to let Jonas and Andrew know if you will be able to attend their wedding, and any additional requirements you may have."
   />
 </svelte:head>
+
+<BurgerMenu />
 
 <h1>RSVP</h1>
 

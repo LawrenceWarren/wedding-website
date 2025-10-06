@@ -1,5 +1,6 @@
 <script>
   import TextColumn from "$lib/components/text_column.svelte";
+  import BurgerMenu from "$lib/components/burger_menu.svelte";
 </script>
 
 <svelte:head>
@@ -10,14 +11,15 @@
   />
 </svelte:head>
 
-<div>
+<BurgerMenu />
+
+<div class="main">
   <h1>Jonas & Andrew</h1>
 
   <h2>10th-12th August, 2026 · Somerset, England</h2>
 
   <a href="/rsvp" class="rsvp-button">RSVP</a>
 </div>
-
 <TextColumn>
   <p>
     Please join us from <b><i>August the 10th until August the 12th 2026</i></b>
@@ -26,7 +28,7 @@
 </TextColumn>
 
 <style>
-  div {
+  .main {
     width: 100%;
     height: 50vh;
     background-image: url("$lib/assets/random-header.png");

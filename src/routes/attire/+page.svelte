@@ -1,6 +1,6 @@
 <script>
   import TextColumn from "$lib/components/text_column.svelte";
-  import Page from "../+page.svelte";
+  import BurgerMenu from "$lib/components/burger_menu.svelte";
 </script>
 
 <svelte:head>
@@ -10,6 +10,8 @@
     content="Advice on what to wear for Jonas' and Andrew's wedding."
   />
 </svelte:head>
+
+<BurgerMenu />
 
 <TextColumn>
   <h1>Attire</h1>

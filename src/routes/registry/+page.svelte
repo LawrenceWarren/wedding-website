@@ -1,5 +1,6 @@
 <script>
   import TextColumn from "$lib/components/text_column.svelte";
+  import BurgerMenu from "$lib/components/burger_menu.svelte";
 </script>
 
 <svelte:head>
@@ -9,6 +10,8 @@
     content="A registry of wedding gifts ideas for Jonas and Andrew."
   />
 </svelte:head>
+
+<BurgerMenu />
 
 <TextColumn>
   <h1>Registry</h1>
