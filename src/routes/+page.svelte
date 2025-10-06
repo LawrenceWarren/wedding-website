@@ -4,7 +4,6 @@
   import kiss_image from "$lib/assets/kiss.webp";
   import header_image from "$lib/assets/andy-and-jonas-cover.webp";
 
-  import TextColumn from "$lib/components/text_column.svelte";
   import BurgerMenu from "$lib/components/burger_menu.svelte";
 </script>
 
