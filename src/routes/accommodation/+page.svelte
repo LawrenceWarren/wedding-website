@@ -1,5 +1,5 @@
 <script>
-  import img from "$lib/assets/exterior-north-cadbury-court.webp";
+  import img from "$lib/assets/north-cadbury.webp";
   import TextColumn from "$lib/components/text_column.svelte";
   import BurgerMenu from "$lib/components/burger_menu.svelte";
   import ImageBanner from "$lib/components/image_banner.svelte";
