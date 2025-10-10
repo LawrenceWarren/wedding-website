@@ -34,8 +34,8 @@
 
 <div class="sub-banner">
   <h1>
-    Please join Jonas and Andrew from August the 10th until August the 12th 2026
-    for the wedding of Jonas Pantaleon and Andrew George.
+    Please join us from August the 10th-12th 2026 as we celebrate our wedding in
+    Somerset.
   </h1>
 
   <div class="photo-grid">
