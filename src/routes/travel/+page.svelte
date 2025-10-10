@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>Jonas' & Andrew's wedding - Travel</title>
+  <title>Travel - Jonas & Andrew</title>
   <meta
     name="description"
     content="Travel information and advice for Jonas' and Andrew's wedding."

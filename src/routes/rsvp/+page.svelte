@@ -150,7 +150,7 @@
 </script>
 
 <svelte:head>
-  <title>Jonas' & Andrew's wedding - RSVP</title>
+  <title>RSVP - Jonas & Andrew</title>
   <meta
     name="description"
     content="A form to let Jonas and Andrew know if you will be able to attend their wedding, and any additional requirements you may have."

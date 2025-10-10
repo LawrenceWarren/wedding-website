@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>Jonas' & Andrew's wedding - Attire</title>
+  <title>Attire - Jonas & Andrew</title>
   <meta
     name="description"
     content="Advice on what to wear for Jonas' and Andrew's wedding."

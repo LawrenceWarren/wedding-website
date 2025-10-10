@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>Jonas' & Andrew's wedding - FAQs</title>
+  <title>FAQs - Jonas & Andrew</title>
   <meta
     name="description"
     content="Commonly asked questions, and their answers, for Jonas' and Andrew's wedding."
@@ -82,21 +82,3 @@
 </TextColumn>
 
 <BurgerMenu />
-
-<style>
-  a {
-    z-index: -10000;
-    pointer-events: all;
-  }
-
-  h1.banner,
-  h2.banner {
-    color: var(--font-light);
-    margin: 0;
-    margin-bottom: 5vw;
-  }
-
-  h1.banner {
-    font-size: 3.5rem;
-  }
-</style>

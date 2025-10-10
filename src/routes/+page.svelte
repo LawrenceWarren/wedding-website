@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-  <title>Jonas' & Andrew's wedding 2026</title>
+  <title>Jonas & Andrew</title>
   <meta
     name="description"
     content="The website for the wedding of Jonas Pantaleon and Andrew George at North Cadbury Court, Somerset, from August 10th until August 12th 2026."
@@ -87,27 +87,6 @@
 <BurgerMenu burgerColor="var(--bg-color)" />
 
 <style>
-  h1.banner,
-  h2.banner {
-    color: var(--font-light);
-    margin: 0;
-    margin-bottom: 5vw;
-  }
-
-  h1.banner {
-    font-size: 3.5rem;
-  }
-
-  a.banner {
-    display: inline-block;
-    color: var(--font-light);
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 1rem;
-    border: 1px solid var(--bg-color);
-    padding: 2vh 5vw; /* lots of padding (adjust as needed) */
-  }
-
   .sub-banner {
     width: 80vw;
     display: flex;

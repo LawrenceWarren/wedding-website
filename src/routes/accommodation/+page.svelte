@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>Jonas' & Andrew's wedding - Accommodation</title>
+  <title>Accommodation - Jonas & Andrew</title>
   <meta
     name="description"
     content="Information about where you can stay for Jonas' and Andrew's wedding."
@@ -108,16 +108,3 @@
 </TextColumn>
 
 <BurgerMenu />
-
-<style>
-  h1.banner,
-  h2.banner {
-    color: var(--font-light);
-    margin: 0;
-    margin-bottom: 5vw;
-  }
-
-  h1.banner {
-    font-size: 3.5rem;
-  }
-</style>
