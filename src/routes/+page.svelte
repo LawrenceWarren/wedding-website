@@ -6,6 +6,8 @@
 
   import BurgerMenu from "$lib/components/burger_menu.svelte";
   import ImageBanner from "$lib/components/image_banner.svelte";
+  import TextColumn from "$lib/components/text_column.svelte";
+  import Countdown from "$lib/components/countdown.svelte";
 </script>
 
 <svelte:head>
@@ -45,6 +47,45 @@
     <img src={kiss_image} alt="Andy and Jonas kissing after getting engaged" />
   </div>
 </div>
+
+<TextColumn>
+  <h1>Timeline</h1>
+
+  <p>We're really looking forward to celebrating our wedding with you.</p>
+  <p>
+    We have exclusive use of North Cadbury Court from 1pm on Monday 10th August
+    to 2pm on Wednesday 12th August.
+  </p>
+  <p>
+    Below are some of the main events; around these times we're hoping every can
+    relax and enjoy the activities at the venue together.
+  </p>
+  <p>
+    We will be providing the food and drinks from a Hog Roast at the welcome
+    dinner on Monday to a farewell pizza on Wednesday - vegetarian, vegan, and
+    gluten free options included for every meal.
+  </p>
+
+  <h2>Monday, 10th August</h2>
+  <ul>
+    <li>1pm - Check in</li>
+    <li>5pm - Filipino welcome dinner</li>
+    <li>8:30pm - Games night</li>
+  </ul>
+
+  <h2>Tuesday, 11th August</h2>
+  <ul>
+    <li>2pm - Wedding Ceremony (to be seated by 2:30pm)</li>
+  </ul>
+
+  <h2>Wednesday, 12th August</h2>
+  <ul>
+    <li>11:30-1:00pm - Farewell pizza lunch</li>
+    <li>2pm - Check out</li>
+  </ul>
+</TextColumn>
+
+<Countdown />
 
 <style>
   h1.banner,
