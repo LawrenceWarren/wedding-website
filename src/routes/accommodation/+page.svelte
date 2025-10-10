@@ -2,6 +2,7 @@
   import img from "$lib/assets/exterior-north-cadbury-court.webp";
   import TextColumn from "$lib/components/text_column.svelte";
   import BurgerMenu from "$lib/components/burger_menu.svelte";
+  import ImageBanner from "$lib/components/image_banner.svelte";
 </script>
 
 <svelte:head>
@@ -12,12 +13,22 @@
   />
 </svelte:head>
 
-<img src={img} alt="The exterior of North Cadbury Court" />
+<ImageBanner
+  src={img}
+  alt="Jonas and Andrew after getting engaged"
+  width="100vw"
+  height="90vh"
+  margin_bottom="10vh"
+  font_size="2rems"
+  font_weight="bold"
+>
+  <h1 class="banner">Accommodation</h1>
+  <h2 class="banner">Somerset, England</h2>
+</ImageBanner>
 
 <BurgerMenu />
 
 <TextColumn>
-  <h1>Accommodation</h1>
   <p>
     We would love for you to stay at the venue with us. The majority of rooms
     are double/single en-suites which are £200/£100 per person for both nights.
@@ -65,7 +76,14 @@
 </TextColumn>
 
 <style>
-  img {
-    max-width: 100%;
+  h1.banner,
+  h2.banner {
+    color: var(--font-light);
+    margin: 0;
+    margin-bottom: 5vw;
+  }
+
+  h1.banner {
+    font-size: 3.5rem;
   }
 </style>

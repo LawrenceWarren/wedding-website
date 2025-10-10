@@ -5,6 +5,7 @@
   import header_image from "$lib/assets/andy-and-jonas-cover.webp";
 
   import BurgerMenu from "$lib/components/burger_menu.svelte";
+  import ImageBanner from "$lib/components/image_banner.svelte";
 </script>
 
 <svelte:head>
@@ -16,17 +17,21 @@
   <meta property="og:image" content={header_image} />
 </svelte:head>
 
-<BurgerMenu burgerColor="var(--bg-color)" />
+<ImageBanner
+  src={header_image}
+  alt="Jonas and Andrew after getting engaged"
+  width="100vw"
+  height="90vh"
+  margin_bottom="10vh"
+  font_size="2rems"
+  font_weight="bold"
+>
+  <h1 class="banner">Jonas & Andrew</h1>
+  <h2 class="banner">10th-12th August, 2026 · Somerset, England</h2>
+  <a class="banner" href="/rsvp">RSVP</a>
+</ImageBanner>
 
-<div class="banner">
-  <!--img
-    src={header_image}
-    alt="Andrew George and Jonas Pantaleon holding each other; they just got engaged"
-  /-->
-  <h1>Jonas & Andrew</h1>
-  <h2>10th-12th August, 2026 · Somerset, England</h2>
-  <a href="/rsvp">RSVP</a>
-</div>
+<BurgerMenu burgerColor="var(--bg-color)" />
 
 <div class="sub-banner">
   <h1>
@@ -42,33 +47,18 @@
 </div>
 
 <style>
-  .banner {
-    width: 100vw;
-    height: 90vh;
-    margin-bottom: 10vh;
-    background-image: url("$lib/assets/andy-and-jonas-cover.webp");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    font-weight: bold;
-  }
-
-  .banner > h1,
-  .banner > h2 {
+  h1.banner,
+  h2.banner {
     color: var(--font-light);
     margin: 0;
     margin-bottom: 5vw;
   }
 
-  .banner > h1 {
+  h1.banner {
     font-size: 3.5rem;
   }
 
-  .banner > a {
+  a.banner {
     display: inline-block;
     color: var(--font-light);
     text-decoration: none;
