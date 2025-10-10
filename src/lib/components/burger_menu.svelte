@@ -20,7 +20,6 @@
     <a style="font-size: 2em" href="/accommodation">Accommodation</a>
     <a style="font-size: 2em" href="/attire">Attire</a>
     <a style="font-size: 2em" href="/registry">Registry</a>
-    <a style="font-size: 2em" href="/timeline">Timeline</a>
     <a style="font-size: 2em" href="/travel">Travel</a>
   </div>
 </BurgerMenu>

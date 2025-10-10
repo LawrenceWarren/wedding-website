@@ -49,6 +49,5 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    pointer-events: none; /* optional, allows clicks to pass through */
   }
 </style>
