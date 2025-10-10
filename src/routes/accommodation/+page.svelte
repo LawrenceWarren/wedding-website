@@ -15,7 +15,7 @@
 
 <ImageBanner
   src={img}
-  alt="Jonas and Andrew after getting engaged"
+  alt="The facade of North Cadbury Court on a sunny day"
   width="100vw"
   height="90vh"
   margin_bottom="10vh"

@@ -1,6 +1,8 @@
 <script>
   import TextColumn from "$lib/components/text_column.svelte";
   import BurgerMenu from "$lib/components/burger_menu.svelte";
+  import ImageBanner from "$lib/components/image_banner.svelte";
+  import header_img from "$lib/assets/cheersing.webp";
 </script>
 
 <svelte:head>
@@ -11,9 +13,20 @@
   />
 </svelte:head>
 
-<TextColumn>
-  <h1>FAQs</h1>
+<ImageBanner
+  src={header_img}
+  alt="Jonas and Andy clinking glasses"
+  width="100vw"
+  height="90vh"
+  margin_bottom="10vh"
+  font_size="2rems"
+  font_weight="bold"
+>
+  <h1 class="banner">FAQs</h1>
+  <h2 class="banner">Frequently asked questions</h2>
+</ImageBanner>
 
+<TextColumn>
   <h2>Will there be an open bar?</h2>
   <p>
     Yes. Drinks are on us - we will have welcome drinks, wine and beer with
@@ -74,5 +87,16 @@
   a {
     z-index: -10000;
     pointer-events: all;
+  }
+
+  h1.banner,
+  h2.banner {
+    color: var(--font-light);
+    margin: 0;
+    margin-bottom: 5vw;
+  }
+
+  h1.banner {
+    font-size: 3.5rem;
   }
 </style>
