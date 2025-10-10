@@ -16,7 +16,6 @@
     name="description"
     content="The website for the wedding of Jonas Pantaleon and Andrew George at North Cadbury Court, Somerset, from August 10th until August 12th 2026."
   />
-  <meta property="og:image" content={header_image} />
 </svelte:head>
 
 <ImageBanner

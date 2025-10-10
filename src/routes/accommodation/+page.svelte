@@ -29,50 +29,84 @@
 <BurgerMenu />
 
 <TextColumn>
+  <h2>Accommodation at the venue</h2>
   <p>
-    We would love for you to stay at the venue with us. The majority of rooms
-    are double/single en-suites which are £200/£100 per person for both nights.
-    This also includes food. <b
-      >TODO: The pricing needs clarification/I think generally this paragraph is
-      a mess</b
-    >
+    We would love for you to stay at the venue with us for the whole
+    celebration.
   </p>
 
-  <p>
-    Unfortunately the venue does not have a booking website, so please let us
-    know if you want to book a suite when you fill out the
-    <a href="/rsvp">RSVP form.</a> Rooms will be allocated on a first come first
-    serve basis.
-    <b>TODO: Perhaps add a section about how/when rooms will be paid for?</b>
-  </p>
+  <h3>Prices</h3>
 
   <p>
-    Some rooms have unique features so please let us know if there is something
-    important to you (eg wheelchair access, bath or shower etc) in your RSVP. <b
-      >TODO: I think clarify more specifically the types of unique features. Is
-      a shower a unique feature to a suite?</b
-    >
+    The majority of rooms available are double en-suites. The prices provided
+    are for a single room for both nights:
   </p>
 
-  <h2>Venue activities</h2>
+  <ul>
+    <li>Single en-suite: £200</li>
+    <li>Double en-suite: £400</li>
+  </ul>
+
   <p>
-    The venue has a swimming pool, sauna, three hole golf course, squash courts,
-    tennis courts, and more, which will be accessible over the three days. We
-    will be providing all food and drinks, from a hog roast at the welcome party
-    on Monday to a farewell pizza on the Wednesday.<b
-      >TODO: Maybe useful to provide a link to a page that has all venue
-      activities (probably from the venues website) or to list them all here</b
-    >
+    This price covers accommodation, breakfast for both mornings, and access to
+    all facilities at the venue such as:
   </p>
 
-  <h2>Alternatives accommodation</h2>
+  <ul>
+    <li>Swimming pool</li>
+    <li>Sauna</li>
+    <li>3-hole golf course</li>
+    <li>Squash and tennis courts</li>
+    <li>More!</li>
+  </ul>
+
+  <h3>How to book a room</h3>
+
   <p>
-    If you are unable to stay at the venue but would still like to be nearby
-    below are some alternative options. Please note offsite guests are unable to
-    stay beyond midnight.<b
-      >TODO: List alternative accommodation if you can be bothered
-    </b>
+    The venue does not have a booking website so please let us know in your RSVP
+    whether you would like to book a room.
   </p>
+  <p>
+    If you have additional requirements for your room, please say let us know
+    via the RSVP form. Some rooms have unique features, such as wheelchair
+    access, a bath or a walk-in shower, or space for extra beds, so hopefully we
+    can cater to your needs.
+  </p>
+  <p>Rooms will be allocated on a first come first serve basis.</p>
+
+  <h3>Paying for rooms</h3>
+
+  <p>
+    We'll confirm your room as soon as we can after receiving your RSVP, then
+    send you bank details so you can make a transfer. If anything changes,
+    please let us know.
+  </p>
+
+  <h2>Alternative accommodation</h2>
+
+  <p>
+    If you are unable to stay at the venue but would still like to be nearby, we
+    have provided some alternative options below. Please note offsite guests are
+    unable to stay at the venue beyond midnight.
+  </p>
+
+  <h3>The Queens Arms, Corton Denham</h3>
+  <ul>
+    <li>Country pub B&B</li>
+    <li>3.5 miles from North Cadbury Court</li>
+    <li><a href="https://www.thequeensarms.com/">Link to website</a></li>
+  </ul>
+
+  <h3>Travelodge, Wincanton</h3>
+
+  <ul>
+    <li>7.3 miles from North Cadbury Court</li>
+    <li>
+      <a href="https://www.travelodge.co.uk/hotels/561/Wincanton-hotel">
+        Link to website
+      </a>
+    </li>
+  </ul>
 </TextColumn>
 
 <style>

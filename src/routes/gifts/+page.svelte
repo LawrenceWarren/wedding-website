@@ -4,17 +4,17 @@
 </script>
 
 <svelte:head>
-  <title>Jonas' & Andrew's wedding - Registry</title>
+  <title>Jonas' & Andrew's wedding - Gifts</title>
   <meta
     name="description"
-    content="A registry of wedding gifts ideas for Jonas and Andrew."
+    content="A registry of wedding gift ideas for Jonas and Andrew."
   />
 </svelte:head>
 
 <BurgerMenu />
 
 <TextColumn>
-  <h1>Registry</h1>
+  <h1>Gifts</h1>
 
   <p>
     There is absolutely no expectations of gifts, we are just happy to be
