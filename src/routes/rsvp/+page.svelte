@@ -157,8 +157,6 @@
   />
 </svelte:head>
 
-<BurgerMenu />
-
 <h1>RSVP</h1>
 
 <form
@@ -351,6 +349,8 @@
     <pre>{JSON.stringify(submittedData, null, 2)}</pre>
   </section>
 {/if}
+
+<BurgerMenu />
 
 <style>
   .form-container {

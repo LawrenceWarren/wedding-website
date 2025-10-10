@@ -8,7 +8,6 @@
 
 <style>
   div {
-    z-index: -1000;
     margin: 0 auto;
     width: var(--width);
     position: relative;

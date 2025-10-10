@@ -32,8 +32,6 @@
   <a class="banner" href="/rsvp">RSVP</a>
 </ImageBanner>
 
-<BurgerMenu burgerColor="var(--bg-color)" />
-
 <div class="sub-banner">
   <h1>
     Please join Jonas and Andrew from August the 10th until August the 12th 2026
@@ -85,6 +83,8 @@
 </TextColumn>
 
 <Countdown />
+
+<BurgerMenu burgerColor="var(--bg-color)" />
 
 <style>
   h1.banner,

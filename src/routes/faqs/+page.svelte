@@ -11,8 +11,6 @@
   />
 </svelte:head>
 
-<BurgerMenu />
-
 <TextColumn>
   <h1>FAQs</h1>
 
@@ -54,13 +52,14 @@
     due to venue capacity and catering arrangements, we're only able to welcome
     the guests named on each invitation.
   </p>
+
   <h2>What happens if I miss the RSVP deadline?</h2>
 
   <b>TODO: This needs content</b>
 
   <h2>Who should I contact if I have any further questions?</h2>
 
-  <p>Please contact us for any more queries!</p>
+  <p>Please contact us with any more queries!</p>
   <address>
     <b>Andrew</b> - <a href="tel:+447910678521">07910 678521</a>
   </address>
@@ -68,3 +67,12 @@
     <b>Jonas</b> - <a href="tel:+447894563744">07894 563744</a>
   </address>
 </TextColumn>
+
+<BurgerMenu />
+
+<style>
+  a {
+    z-index: -10000;
+    pointer-events: all;
+  }
+</style>

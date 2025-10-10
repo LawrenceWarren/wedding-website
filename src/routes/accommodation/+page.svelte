@@ -26,8 +26,6 @@
   <h2 class="banner">Somerset, England</h2>
 </ImageBanner>
 
-<BurgerMenu />
-
 <TextColumn>
   <h2>Accommodation at the venue</h2>
   <p>
@@ -108,6 +106,8 @@
     </li>
   </ul>
 </TextColumn>
+
+<BurgerMenu />
 
 <style>
   h1.banner,

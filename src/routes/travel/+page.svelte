@@ -11,8 +11,6 @@
   />
 </svelte:head>
 
-<BurgerMenu />
-
 <TextColumn>
   <h1>Travel</h1>
 
@@ -54,6 +52,8 @@
     interested via the RSVP form.
   </p>
 </TextColumn>
+
+<BurgerMenu />
 
 <style>
   .site-address {

@@ -11,8 +11,6 @@
   />
 </svelte:head>
 
-<BurgerMenu />
-
 <TextColumn>
   <h1>Gifts</h1>
 
@@ -28,3 +26,5 @@
     too.
   </p>
 </TextColumn>
+
+<BurgerMenu />

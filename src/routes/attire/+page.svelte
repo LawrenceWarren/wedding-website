@@ -11,8 +11,6 @@
   />
 </svelte:head>
 
-<BurgerMenu />
-
 <TextColumn>
   <h1>Attire</h1>
 
@@ -49,3 +47,5 @@
     free to where whatever you feel comfortable in.
   </p>
 </TextColumn>
+
+<BurgerMenu />
