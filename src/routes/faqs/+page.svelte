@@ -20,26 +20,32 @@
   <p>
     Yes. Drinks are on us - we will have welcome drinks, wine and beer with
     dinner, and an open bar for the party after the ceremony. While we won't be
-    stocking every possible spirit, there should be a good enough range to have
-    a great time!
+    stocking every possible drink, there should be a good enough range to have a
+    great time!
   </p>
 
   <h2>Can I bring my own food and drinks?</h2>
   <p>
-    Yes. While we will be providing an open bar and meals throughout the
-    wedding, there are no restrictions on bringing food and drinks (including
-    alcohol) to the venue. Feel free to bring your own if you want something
+    Yes. There are no restrictions on bringing food and drinks (including
+    alcohol) into the venue.
+  </p>
+
+  <p>
+    Feel free to bring your own snacks and beverages if you want something
     specific. All guests staying at the venue will have access to fridges and
-    cooking facilities in their rooms and suites.
+    cooking facilities.
   </p>
 
   <h2>Do I have to stay at the venue?</h2>
   <p>
     No. We would love for you to stay at the venue so that we can spend as much
     time together enjoying the activities as possible, but we understand this
-    may not be possible for everyone. <a href="/accommodation"
-      >Please see the accommodation page</a
-    > for a range of options.
+    may not be possible for everyone.
+  </p>
+
+  <p>
+    <a href="/accommodation">Please see the accommodation page</a> for a range of
+    options.
   </p>
 
   <h2>Can I bring additional guests or plus ones?</h2>

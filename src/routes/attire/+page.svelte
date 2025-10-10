@@ -17,28 +17,31 @@
   <h1>Attire</h1>
 
   <p>
-    We would love to see our family and friends get dressed up for our special
-    occasion. As there will be several days worth of activities, it's worth
-    bringing a few changes of clothes.
+    We would love to see our family and friends get dressed up for our big day.
   </p>
 
-  <h2>Filipino welcome party</h2>
+  <h2>Filipino welcome dinner</h2>
+
   <p>
-    We'd love for you to dress in traditional Filipino wedding attire, which is
-    barong tagalog and filinanas. If you don't already have these, a few online
-    suppliers are: <b>TODO LINK TO SUPPLIERS.</b> If not please wear cream/white
-    dress or cream/white shirt with black trousers.
+    We would love for you to dress in traditional cream Filipino wedding attire,
+    which is Barong Tagalog and Bolero Filipinianas.
+  </p>
+
+  <p>
+    If you would like to wear this and don't already have the items then a few
+    online suppliers are listed below: <b>TODO list suppliers</b>: If not please
+    wear cream/white dress or cream/white shirt with black trousers.
   </p>
 
   <h2>Ceremony</h2>
+
   <p>
-    Please dress in formal attire. Ideally wear something bright and summery for
-    an outdoor and (finger crossed) sunny wedding. <b
-      >TODO find color palette, stock images</b
-    >
+    Please dress in suits or long dresses. Bright and summery for (finger
+    crossed) an outdoor wedding. <b>TODO: Colour palette and images</b>
   </p>
 
   <h2>The rest of the time</h2>
+
   <p>
     There will be plenty of downtime for you to partake in the activities and
     enjoy the greenery of North Cadbury Court, particularly in the afternoon

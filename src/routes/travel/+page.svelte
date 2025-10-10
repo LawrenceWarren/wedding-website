@@ -16,7 +16,7 @@
 <TextColumn>
   <h1>Travel</h1>
 
-  <p>All 3 days of our wedding will be held at:</p>
+  <p>The entire wedding and all of it's events will be held at:</p>
 
   <address class="site-address">
     <a
@@ -35,7 +35,7 @@
   <h2>Travelling by car</h2>
   <p>
     There is a car park with ample free parking and four free electric charging
-    points at North Cadbury Court.
+    points at the venue.
   </p>
 
   <h2>Travelling by rail</h2>
@@ -51,7 +51,7 @@
     We are planning organise a coach from Cambridgeshire (likely Northstowe) to
     the venue and back to reduce the number of people driving. A rough quote
     suggested it would be a £50 return per-person. Please let us know if you are
-    interested in the RSVP form.
+    interested via the RSVP form.
   </p>
 </TextColumn>
 
