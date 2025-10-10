@@ -54,13 +54,13 @@
     to 2pm on Wednesday 12th August.
   </p>
   <p>
-    Below are some of the main events; around these times we're hoping every can
-    relax and enjoy the activities at the venue together.
+    Below are some of the main events; around these times we're hoping everyone
+    can relax and enjoy the activities at the venue together.
   </p>
   <p>
-    We will be providing the food and drinks from a Hog Roast at the welcome
-    dinner on Monday to a farewell pizza on Wednesday - vegetarian, vegan, and
-    gluten free options included for every meal.
+    We will be providing the food and drinks, from a hog roast at the welcome
+    dinner on Monday through to a farewell pizza on Wednesday - vegetarian,
+    vegan, and gluten free options are available for every meal.
   </p>
 
   <h2>Monday, 10th August</h2>
