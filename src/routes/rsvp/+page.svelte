@@ -1,5 +1,9 @@
 <script lang="ts">
   import BurgerMenu from "$lib/components/burger_menu.svelte";
+  import ImageBanner from "$lib/components/image_banner.svelte";
+  import TextColumn from "$lib/components/text_column.svelte";
+  import header_img from "$lib/assets/kiss-landscape.webp";
+
   import { onMount } from "svelte";
 
   let fullName = "";
@@ -157,15 +161,20 @@
   />
 </svelte:head>
 
-<h1>RSVP</h1>
+<ImageBanner src={header_img} img_filter="brightness(0.8)" margin_bottom="2vh">
+  <h1 class="banner">RSVP</h1>
+  <h2 class="banner">Let us know if you'll be there</h2>
+</ImageBanner>
+
+<TextColumn>
+  <p>We look forward to seeing you! Fill out the form below.</p>
+</TextColumn>
 
 <form
   class="form-container"
   on:submit|preventDefault={handleSubmit}
   aria-labelledby="rsvp-heading"
 >
-  <h2 id="rsvp-heading">Wedding RSVP</h2>
-
   {#if formError}
     <div role="alert" class="error">{formError}</div>
   {/if}
@@ -285,7 +294,7 @@
           value="beef"
           on:change={() => (meal = "beef")}
           checked={meal === "beef"}
-        /> Beef</label
+        />Braised Beef Cheeks with Rainbow Carrots, Parsnip Puree & Truffle Jus</label
       >
       <label
         ><input
@@ -294,7 +303,8 @@
           value="aubergine"
           on:change={() => (meal = "aubergine")}
           checked={meal === "aubergine"}
-        /> Aubergine</label
+        />Aubergine Parmigana Rolls with Spinach & Ricotta served with Tomato
+        Compote and Pan-Fried Gnocchi</label
       >
     </fieldset>
 
@@ -354,9 +364,10 @@
 
 <style>
   .form-container {
+    width: clamp(0px, 750px, 87vw);
     max-width: 700px;
     margin: 0 auto;
-    padding: 1.5rem;
+    padding: 3vw;
     background: #fff; /*TODO: Choose a different white*/
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -398,7 +409,6 @@
     min-height: 2.5rem; /* fixes Safari iOS */
     box-sizing: border-box;
     background-color: #fff; /*TODO: Choose a different color*/
-    font-family: inherit;
   }
 
   input[type="radio"],

@@ -31,22 +31,25 @@ a.banner {
   padding: 2vh 5vw; /* lots of padding (adjust as needed) */
 }
 
-b {
+p,
+b,
+a,
+li,
+h1,
+h2,
+h3,
+label,
+legend,
+input {
   font-family: "Poppins";
 }
 
 a {
-  font-family: "Poppins";
   color: var(--font-color);
-}
-
-li {
-  font-family: "Poppins", "Lucida Handwriting", cursive;
 }
 
 h1,
 h2 {
-  font-family: "Poppins", "Lucida Handwriting", cursive;
   font-style: normal;
   color: var(--font-color);
   text-align: center;

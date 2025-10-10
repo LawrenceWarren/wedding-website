@@ -8,6 +8,7 @@
     margin_bottom = "10vh",
     font_size = "2rems",
     font_weight = "bold",
+    img_filter = "none",
   } = $props();
 </script>
 
@@ -15,7 +16,7 @@
   class="container"
   style="--width: {width}; --height: {height}; --margin-bottom: {margin_bottom}; --font-size: {font_size}; --font-weight: {font_weight};"
 >
-  <img {src} {alt} />
+  <img {src} {alt} style="--img-filter: {img_filter};" />
   <div class="overlay">
     {@render children?.()}
   </div>
@@ -38,6 +39,7 @@
     object-fit: cover;
     width: var(--width);
     height: var(--height);
+    filter: var(--img-filter);
   }
 
   .overlay {
