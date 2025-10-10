@@ -17,11 +17,7 @@
 <ImageBanner
   src={header_image}
   alt="The ring on Jonas finger while the couple hold hands"
-  width="100vw"
-  height="90vh"
-  margin_bottom="10vh"
-  font_size="2rems"
-  font_weight="bold"
+  img_filter="brightness(0.95)"
 >
   <h1 class="banner">Gifts</h1>
   <h2 class="banner">Contribute to our honeymoon fund</h2>

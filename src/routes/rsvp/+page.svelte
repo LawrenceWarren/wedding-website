@@ -161,7 +161,12 @@
   />
 </svelte:head>
 
-<ImageBanner src={header_img} img_filter="brightness(0.8)" margin_bottom="2vh">
+<ImageBanner
+  src={header_img}
+  alt="Jonas and Andrew kissing in front of a gorgeous vista"
+  img_filter="brightness(0.8)"
+  margin_bottom="2vh"
+>
   <h1 class="banner">RSVP</h1>
   <h2 class="banner">Let us know if you'll be there</h2>
 </ImageBanner>

@@ -2,7 +2,7 @@
   let {
     children,
     src,
-    alt = "",
+    alt,
     width = "100vw",
     height = "90vh",
     margin_bottom = "10vh",

@@ -13,15 +13,7 @@
   />
 </svelte:head>
 
-<ImageBanner
-  src={img}
-  alt="The facade of North Cadbury Court on a sunny day"
-  width="100vw"
-  height="90vh"
-  margin_bottom="10vh"
-  font_size="2rems"
-  font_weight="bold"
->
+<ImageBanner src={img} alt="The facade of North Cadbury Court on a sunny day">
   <h1 class="banner">Accommodation</h1>
   <h2 class="banner">Somerset, England</h2>
 </ImageBanner>
@@ -36,8 +28,8 @@
   <h3>Prices</h3>
 
   <p>
-    The majority of rooms available are double en-suites. The prices provided
-    are for a single room for both nights:
+    The majority of rooms available are double en-suites. Below are the prices
+    for one room for both nights:
   </p>
 
   <ul>
@@ -84,8 +76,8 @@
 
   <p>
     If you are unable to stay at the venue but would still like to be nearby, we
-    have provided some alternative options below. Please note offsite guests are
-    unable to stay at the venue beyond midnight.
+    have provided some alternative options below. Please note, offsite guests
+    are unable to stay at the venue beyond midnight.
   </p>
 
   <h3>The Queens Arms, Corton Denham</h3>

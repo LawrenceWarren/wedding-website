@@ -16,11 +16,7 @@
 <ImageBanner
   src={header_img}
   alt="Jonas and Andy clinking glasses"
-  width="100vw"
-  height="90vh"
-  margin_bottom="10vh"
-  font_size="2rems"
-  font_weight="bold"
+  img_filter="brightness(0.86)"
 >
   <h1 class="banner">FAQs</h1>
   <h2 class="banner">Frequently asked questions</h2>

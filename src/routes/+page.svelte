@@ -21,11 +21,7 @@
 <ImageBanner
   src={header_image}
   alt="Jonas and Andrew after getting engaged"
-  width="100vw"
-  height="90vh"
-  margin_bottom="10vh"
-  font_size="2rems"
-  font_weight="bold"
+  img_filter="brightness(0.95)"
 >
   <h1 class="banner">Jonas & Andrew</h1>
   <h2 class="banner">10th-12th August, 2026 · Somerset, England</h2>
