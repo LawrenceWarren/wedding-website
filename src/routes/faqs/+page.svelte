@@ -15,7 +15,7 @@
 
 <ImageBanner
   src={header_img}
-  alt="Jonas and Andy clinking glasses"
+  alt="Jonas and Andrew clinking glasses"
   img_filter="brightness(0.86)"
 >
   <h1 class="banner">FAQs</h1>
@@ -26,9 +26,9 @@
   <h2>Will there be an open bar?</h2>
   <p>
     Yes. Drinks are on us - we will have welcome drinks, wine and beer with
-    dinner, and an open bar for the party after the ceremony. While we won't be
-    stocking every possible drink, there should be a good enough range to have a
-    great time!
+    dinner, and an open bar for the party after the ceremony. While we will not
+    be stocking every possible drink, there should be a good enough range to
+    have a great time!
   </p>
 
   <h2>Can I bring my own food and drinks?</h2>
@@ -58,7 +58,7 @@
   <h2>Can I bring additional guests or plus ones?</h2>
   <p>
     Unfortunately not. While we would love to celebrate with everyone we know,
-    due to venue capacity and catering arrangements, we're only able to welcome
+    due to venue capacity and catering arrangements, we are only able to welcome
     the guests named on each invitation.
   </p>
 

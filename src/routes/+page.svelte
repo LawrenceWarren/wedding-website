@@ -35,22 +35,25 @@
   </h1>
 
   <div class="photo-grid">
-    <img src={smiling_image} alt="Andy and Jonas smiling" />
+    <img src={smiling_image} alt="Andrew and Jonas smiling" />
     <img src={ring_image} alt="The wedding ring on Jonas' finger" />
-    <img src={kiss_image} alt="Andy and Jonas kissing after getting engaged" />
+    <img
+      src={kiss_image}
+      alt="Andrew and Jonas kissing after getting engaged"
+    />
   </div>
 </div>
 
 <TextColumn>
   <h1>Timeline</h1>
 
-  <p>We're really looking forward to celebrating our wedding with you.</p>
+  <p>We are really looking forward to celebrating our wedding with you.</p>
   <p>
     We have exclusive use of North Cadbury Court from 1pm on Monday 10th August
     to 2pm on Wednesday 12th August.
   </p>
   <p>
-    Below are some of the main events; around these times we're hoping everyone
+    Below are some of the main events; around these times we are hoping everyone
     can relax and enjoy the activities at the venue together.
   </p>
   <p>

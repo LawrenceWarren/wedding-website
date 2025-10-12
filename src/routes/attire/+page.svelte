@@ -26,7 +26,7 @@
   </p>
 
   <p>
-    If you would like to wear this and don't already have the items then a few
+    If you would like to wear this and do not already have the items then a few
     online suppliers are listed below: <b>TODO list suppliers</b>: If not please
     wear cream/white dress or cream/white shirt with black trousers.
   </p>

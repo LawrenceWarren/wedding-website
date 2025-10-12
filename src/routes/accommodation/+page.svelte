@@ -67,9 +67,9 @@
   <h3>Paying for rooms</h3>
 
   <p>
-    We'll confirm your room as soon as we can after receiving your RSVP, then
-    send you bank details so you can make a transfer. If anything changes,
-    please let us know.
+    We will confirm your room as soon as we can after receiving your RSVP. After
+    confirming the room, we will send you our bank details so you can make a
+    transfer. If anything changes, please let us know as soon as possible.
   </p>
 
   <h2>Alternative accommodation</h2>

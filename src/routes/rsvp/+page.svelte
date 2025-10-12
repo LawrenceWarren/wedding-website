@@ -168,7 +168,7 @@
   margin_bottom="2vh"
 >
   <h1 class="banner">RSVP</h1>
-  <h2 class="banner">Let us know if you'll be there</h2>
+  <h2 class="banner">Let us know if you will be there</h2>
 </ImageBanner>
 
 <TextColumn>
