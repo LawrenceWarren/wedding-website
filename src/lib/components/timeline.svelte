@@ -41,7 +41,7 @@
 <style>
   li {
     list-style: none;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1vh;
     border-left: var(--line-width) solid var(--primary-color);
     position: relative;
     padding-left: 20px;
