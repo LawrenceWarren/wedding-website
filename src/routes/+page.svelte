@@ -4,6 +4,7 @@
   import kiss_image from "$lib/assets/kiss.webp";
   import header_image from "$lib/assets/andy-and-jonas-cover.webp";
 
+  import Timeline from "$lib/components/timeline.svelte";
   import BurgerMenu from "$lib/components/burger_menu.svelte";
   import ImageBanner from "$lib/components/image_banner.svelte";
   import TextColumn from "$lib/components/text_column.svelte";
@@ -56,29 +57,13 @@
     Below are some of the main events; around these times we are hoping everyone
     can relax and enjoy the activities at the venue together.
   </p>
-  <p>
+  <p class="bottom-p">
     We will be providing the food and drinks, from a hog roast at the welcome
     dinner on Monday through to a farewell pizza on Wednesday - vegetarian,
     vegan, and gluten free options are available for every meal.
   </p>
 
-  <h2>Monday, 10th August</h2>
-  <ul>
-    <li>1pm - Check in</li>
-    <li>5pm - Filipino welcome dinner</li>
-    <li>8:30pm - Games night</li>
-  </ul>
-
-  <h2>Tuesday, 11th August</h2>
-  <ul>
-    <li>2pm - Wedding Ceremony (to be seated by 2:30pm)</li>
-  </ul>
-
-  <h2>Wednesday, 12th August</h2>
-  <ul>
-    <li>11:30-1:00pm - Farewell pizza lunch</li>
-    <li>2pm - Check out</li>
-  </ul>
+  <Timeline />
 </TextColumn>
 
 <Countdown />
@@ -86,6 +71,10 @@
 <BurgerMenu burgerColor="var(--bg-color)" />
 
 <style>
+  .bottom-p {
+    margin-bottom: 0;
+  }
+
   .sub-banner {
     width: 80vw;
     display: flex;
