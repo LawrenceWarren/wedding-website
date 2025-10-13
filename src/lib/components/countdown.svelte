@@ -57,7 +57,7 @@
     </div>
   {:else if !wedding_finished}
     <div class="main_text">💃 Let's party 🕺</div>
-    <div class="sub_text">enjoy the wedding!</div>
+    <div class="sub_text">get off your phone, enjoy the wedding!</div>
   {:else}
     <div class="main_text">❤️ Don't cry because it's over ❤️</div>
     <div class="sub_text">smile because it happened</div>

@@ -6,7 +6,8 @@
 
   import { onMount } from "svelte";
 
-  let fullName = "";
+  let forename = "";
+  let surname = "";
   let email = "";
   let phone = "";
 
@@ -53,8 +54,10 @@
 
   function validate() {
     formError = "";
-    if (!fullName.trim())
-      return (formError = "Please enter your full name."), false;
+    if (!forename.trim())
+      return (formError = "Please enter your forename."), false;
+    if (!surname.trim())
+      return (formError = "Please enter your surname."), false;
     if (!email.trim())
       return (formError = "Please enter your email address."), false;
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email))
@@ -122,7 +125,8 @@
         : null;
 
     submittedData = {
-      fullName,
+      forename,
+      surname,
       email,
       phone,
       attendance,
@@ -184,9 +188,16 @@
     <div role="alert" class="error">{formError}</div>
   {/if}
 
-  <div class="form-group">
-    <label class="legend_label" for="fullName">Full name</label>
-    <input id="fullName" bind:value={fullName} required />
+  <div class="nested-group">
+    <div class="form-group">
+      <label class="legend_label" for="forename">Forename</label>
+      <input id="forename" bind:value={forename} required />
+    </div>
+
+    <div class="form-group">
+      <label class="legend_label" for="surname">Surname</label>
+      <input id="surname" bind:value={surname} required />
+    </div>
   </div>
 
   <div class="form-group">
@@ -374,7 +385,7 @@
     width: clamp(0px, 750px, 87vw);
     max-width: 700px;
     margin: 0 auto;
-    padding: 3vw;
+    padding: 10px;
     background: #fff; /*TODO: Choose a different white*/
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -456,17 +467,25 @@
   }
 
   .nested-group {
-    margin-left: 1.5rem;
     margin-top: 0.5rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1rem;
-    margin-right: 1.5rem;
   }
 
   .nested-group label {
     display: flex;
     flex-direction: column;
+  }
+
+  fieldset > .nested-group {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  fieldset > .nested-group label {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     font-weight: 500;
     font-style: italic;
   }
