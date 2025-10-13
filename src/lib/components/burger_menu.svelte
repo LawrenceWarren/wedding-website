@@ -1,5 +1,5 @@
 <script>
-  import BurgerMenu from "svelte-burger-menu";
+  import BurgerMenu from "$lib/components/burger_menu/burger_menu.svelte";
 
   export let burgerColor = "var(--font-color)";
   export let menuColor = "var(--font-color)";

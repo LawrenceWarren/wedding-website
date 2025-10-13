@@ -3,7 +3,7 @@
     children,
     src,
     alt,
-    width = "100vw",
+    width = "100%",
     height = "90vh",
     margin_bottom = "10vh",
     font_size = "2rems",

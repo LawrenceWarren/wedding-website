@@ -21,8 +21,8 @@
 <TextColumn>
   <h2>Accommodation at North Cadbury Court</h2>
   <p>
-    We would love for you to stay at North Cadbury Court with us for the whole
-    celebration.
+    We would love for you to stay with us at the wedding venue, North Cadbury
+    Court, for the whole celebration.
   </p>
 
   <h3>Prices</h3>
