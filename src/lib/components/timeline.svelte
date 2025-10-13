@@ -32,7 +32,7 @@
   {#each timeline as day, i}
     <li>
       <div class="time">
-        {day.date}
+        <b>{day.date}</b>
       </div>
       {#each day.events as events}
         <p>{events}</p>

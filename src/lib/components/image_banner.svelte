@@ -4,17 +4,15 @@
     src,
     alt,
     width = "100%",
-    height = "90vh",
+    height = "clamp(400px, 90vh, 1000px)",
     margin_bottom = "10vh",
-    font_size = "2rems",
-    font_weight = "bold",
     img_filter = "none",
   } = $props();
 </script>
 
 <div
   class="container"
-  style="--width: {width}; --height: {height}; --margin-bottom: {margin_bottom}; --font-size: {font_size}; --font-weight: {font_weight};"
+  style="--width: {width}; --height: {height}; --margin-bottom: {margin_bottom};"
 >
   <img {src} {alt} style="--img-filter: {img_filter};" />
   <div class="overlay">
@@ -30,8 +28,6 @@
     width: var(--width);
     height: var(--height);
     margin-bottom: var(--margin-bottom);
-    font-size: var(--font-size);
-    font-weight: var(--font-weight);
   }
 
   img {
