@@ -50,19 +50,21 @@
     <li>More!</li>
   </ul>
 
+  <p>
+    If you have additional requirements for your room, please say let us know
+    via the RSVP form. Some rooms have unique features, such as wheelchair
+    access, a bath or a walk-in shower, or space for extra beds, so your needs
+    can be catered for.
+  </p>
+
+  <p>Rooms will be allocated on a first-come, first-served basis.</p>
+
   <h3>How to book a room</h3>
 
   <p>
     North Cadbury Court does not have a booking website, so please let us know
-    in your RSVP whether you would like to book a room.
+    via the RSVP form whether you would like to book a room.
   </p>
-  <p>
-    If you have additional requirements for your room, please say let us know
-    via the RSVP form. Some rooms have unique features, such as wheelchair
-    access, a bath or a walk-in shower, or space for extra beds, so hopefully we
-    can cater to your needs.
-  </p>
-  <p>Rooms will be allocated on a first come first serve basis.</p>
 
   <h3>Paying for rooms</h3>
 

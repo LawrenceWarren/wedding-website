@@ -64,7 +64,10 @@
 
   <h2>What happens if I miss the RSVP deadline?</h2>
 
-  <b>TODO: This needs content</b>
+  <b
+    >TODO: You need to define when the RSVP deadline is. This needs content.
+    Also I suggest perhaps we add this question in after the RSVP deadline?</b
+  >
 
   <h2>Who should I contact if I have any further questions?</h2>
 
