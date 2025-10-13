@@ -86,6 +86,7 @@
   .sub-banner > h1 {
     font-weight: 500;
     font-size: 1.7rem;
+    margin-bottom: 10vh;
   }
 
   .photo-grid {

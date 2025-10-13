@@ -7,7 +7,7 @@
     {
       date: "August 10th",
       events: [
-        "1:00pm · Check in",
+        "1:00pm · Check in opens",
         "5:00pm · Filipino welcome dinner",
         "8:30pm · Games night",
       ],
@@ -18,7 +18,10 @@
     },
     {
       date: "August 12th",
-      events: ["11:30am-1:00pm · Farewell pizza lunch", "2:00pm · Check out"],
+      events: [
+        "11:30am-1:00pm · Farewell pizza lunch",
+        "2:00pm · Check out closes",
+      ],
     },
   ];
 </script>

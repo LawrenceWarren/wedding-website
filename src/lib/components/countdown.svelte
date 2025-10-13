@@ -7,11 +7,24 @@
     Math.max(0, Math.floor((target_time - now) / 1000))
   );
 
-  // Time breakdown
-  let days = $derived(Math.floor(seconds_remaining / 86400));
-  let hours = $derived(Math.floor((seconds_remaining % 86400) / 3600));
-  let minutes = $derived(Math.floor((seconds_remaining % 3600) / 60));
-  let seconds = $derived(seconds_remaining % 60);
+  let counter_elements = $derived([
+    {
+      label: "days",
+      value: Math.floor(seconds_remaining / 86400),
+    },
+    {
+      label: "hours",
+      value: Math.floor((seconds_remaining % 86400) / 3600),
+    },
+    {
+      label: "minutes",
+      value: Math.floor((seconds_remaining % 3600) / 60),
+    },
+    {
+      label: "seconds",
+      value: (seconds_remaining % 60).toString().padStart(2, "0"),
+    },
+  ]);
 
   // Update every second
   $effect(() => {
@@ -28,22 +41,12 @@
   <div class="sub_text">until 1pm, August 10, 2026</div>
 
   <div class="time_parts">
-    <div class="time_part">
-      <div class="time_value">{days}</div>
-      <div class="time_label">days</div>
-    </div>
-    <div class="time_part">
-      <div class="time_value">{hours}</div>
-      <div class="time_label">hours</div>
-    </div>
-    <div class="time_part">
-      <div class="time_value">{minutes}</div>
-      <div class="time_label">minutes</div>
-    </div>
-    <div class="time_part">
-      <div class="time_value">{seconds.toString().padStart(2, "0")}</div>
-      <div class="time_label">seconds</div>
-    </div>
+    {#each counter_elements as part}
+      <div class="time_part">
+        <div class="time_value">{part.value}</div>
+        <div class="time_label">{part.label}</div>
+      </div>
+    {/each}
   </div>
 </div>
 
