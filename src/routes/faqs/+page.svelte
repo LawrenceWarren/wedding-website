@@ -77,4 +77,4 @@
   </address>
 </TextColumn>
 
-<BurgerMenu />
+<BurgerMenu burgerColor="var(--bg-color)" />

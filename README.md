@@ -4,46 +4,31 @@
 
 [YouTube Link](https://www.youtube.com/watch?feature=shared&v=jgwVrgZM4Gk&themeRefresh=1)
 
+[This is the demo website this website is based upon](https://dario-fluid-demo.squarespace.com)
+
 ## Pages needed
 
-- home
-- page with timeline
-- accommodation
-- attire
-- travel
-- faqs
-- registry
+- Homepage and timeline
+- Accommodation
+- Attire
+- Travel
+- FAQs
+- Registry/gifts
 - RSVP page
 
 ## Packages
 
 - Burger menu from [GitHub](https://github.com/jorisBarkema/svelte-burger-menu).
 
-## Default docs
-
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've installed dependencies with `pnpm install`, start a development server:
 
 ```sh
-npm run dev
+pnpm run dev
 
 # or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm run dev -- --open
 ```
 
 ## Building
@@ -51,9 +36,7 @@ npm run dev -- --open
 To create a production version of your app:
 
 ```sh
-npm run build
+pnpm run build
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+You can preview the production build with `pnpm run preview`.

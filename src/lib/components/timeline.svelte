@@ -39,6 +39,12 @@
 </ul>
 
 <style>
+  ul {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 5vw;
+  }
+
   li {
     list-style: none;
     padding-bottom: 1vh;
@@ -48,11 +54,7 @@
     margin-left: 10px;
   }
 
-  li:last-child {
-    border-left: var(--line-width) solid var(--bg-color);
-    padding-bottom: 0;
-  }
-
+  /*The circles*/
   li:before {
     content: "";
     top: 0;
@@ -71,13 +73,21 @@
     );
   }
 
+  /*Ensure the final circle has no line below it */
+  li:last-child {
+    border-left: var(--line-width) solid var(--bg-color);
+    padding-bottom: 0;
+  }
+
   .time {
-    color: #2a2839;
+    width: fit-content;
+    color: var(--font-color);
     font-weight: 500;
   }
 
   p {
-    color: #4f4f4f;
+    width: fit-content;
+    color: var(--font-color);
     line-height: 1.5;
     margin-top: 0.4rem;
   }
