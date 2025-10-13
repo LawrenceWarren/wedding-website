@@ -261,7 +261,9 @@
 
   {#if attendance === "yes_whole" || attendance === "yes_some"}
     <fieldset>
-      <legend>Would you like to book accommodation at the venue?</legend>
+      <legend
+        >Would you like to book accommodation at North Cadbury Court?</legend
+      >
       <label
         ><input
           type="radio"
@@ -330,7 +332,7 @@
     <fieldset>
       <legend
         >Are you interested in booking a return journey on a coach from
-        Cambridgeshire to the venue (approximately £50)</legend
+        Cambridgeshire to North Cadbury Court (approximately £50)</legend
       >
       <label
         ><input

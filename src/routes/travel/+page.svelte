@@ -33,23 +33,22 @@
   <h2>Travelling by car</h2>
   <p>
     There is a car park with ample free parking and four free electric charging
-    points at the venue.
+    points at North Cadbury Court.
   </p>
 
   <h2>Travelling by rail</h2>
   <p>
     The nearest train station is Castle Cary, which is one and a half hours from
-    London Paddington, and then a ten minute drive to the venue. <b
-      >TODO: link to a taxi service</b
-    >
+    London Paddington, and then a ten minute drive to North Cadbury Court.
+    <b>TODO: link to a taxi service</b>
   </p>
 
   <h2>Travel from Cambridgeshire</h2>
   <p>
-    We are planning organise a coach from Cambridgeshire (likely Northstowe) to
-    the venue and back to reduce the number of people driving. A rough quote
-    suggested it would be a £50 return per-person. Please let us know if you are
-    interested via the RSVP form.
+    To reduce the number of people driving, we are planning to organise a coach
+    from Cambridgeshire (likely Northstowe) to North Cadbury Court and back. A
+    rough quote suggested it would be a £50 return per-person. Please let us
+    know if you are interested via the RSVP form.
   </p>
 </TextColumn>
 

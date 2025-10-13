@@ -25,7 +25,7 @@
   img_filter="brightness(0.95)"
 >
   <h1 class="banner">Jonas & Andrew</h1>
-  <h2 class="banner">10th-12th August, 2026 · Somerset, England</h2>
+  <h2 class="banner">10th-12th August, 2026 · North Cadbury Court, Somerset</h2>
   <a class="banner" href="/rsvp">RSVP</a>
 </ImageBanner>
 
@@ -55,7 +55,7 @@
   </p>
   <p>
     Below are some of the main events; around these times we are hoping everyone
-    can relax and enjoy the activities at the venue together.
+    can relax and enjoy the activities at North Cadbury Court together.
   </p>
   <p class="bottom-p">
     We will be providing the food and drinks, from a hog roast at the welcome

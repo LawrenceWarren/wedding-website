@@ -27,7 +27,7 @@
 </script>
 
 <ul
-  style="--line-width: {line_width}; --circle-diameter: {circle_diameter}; --circle-border-width: {circle_border_width}"
+  style="--line-width: {line_width}; --circle-diameter: {circle_diameter}; --circle-border-width: {circle_border_width};"
 >
   {#each timeline as day, i}
     <li>
@@ -43,6 +43,8 @@
 
 <style>
   ul {
+    --top-adjustment: calc(calc(var(--circle-diameter) / 2) - 12px);
+
     padding-top: 1vh;
     padding-bottom: 1vh;
     padding-left: 5vw;
@@ -86,6 +88,9 @@
     width: fit-content;
     color: var(--font-color);
     font-weight: 500;
+
+    position: relative;
+    top: var(--top-adjustment);
   }
 
   p {
@@ -93,5 +98,8 @@
     color: var(--font-color);
     line-height: 1.5;
     margin-top: 0.4rem;
+
+    position: relative;
+    top: var(--top-adjustment);
   }
 </style>

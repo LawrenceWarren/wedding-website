@@ -34,20 +34,20 @@
   <h2>Can I bring my own food and drinks?</h2>
   <p>
     Yes. There are no restrictions on bringing food and drinks (including
-    alcohol) into the venue.
+    alcohol) into North Cadbury Court.
   </p>
 
   <p>
     Feel free to bring your own snacks and beverages if you want something
-    specific. All guests staying at the venue will have access to fridges and
-    cooking facilities.
+    specific. All guests staying at North Cadbury Court will have access to
+    fridges and cooking facilities.
   </p>
 
-  <h2>Do I have to stay at the venue?</h2>
+  <h2>Do I have to stay at North Cadbury Court?</h2>
   <p>
-    No. We would love for you to stay at the venue so that we can spend as much
-    time together enjoying the activities as possible, but we understand this
-    may not be possible for everyone.
+    No. We would love for you to stay at North Cadbury Court so that we can
+    spend as much time together enjoying the activities as possible, but we
+    understand this may not be possible for everyone.
   </p>
 
   <p>

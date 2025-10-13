@@ -19,9 +19,9 @@
 </ImageBanner>
 
 <TextColumn>
-  <h2>Accommodation at the venue</h2>
+  <h2>Accommodation at North Cadbury Court</h2>
   <p>
-    We would love for you to stay at the venue with us for the whole
+    We would love for you to stay at North Cadbury Court with us for the whole
     celebration.
   </p>
 
@@ -39,7 +39,7 @@
 
   <p>
     This price covers accommodation, breakfast for both mornings, and access to
-    all facilities at the venue such as:
+    all of the facilities at North Cadbury Court such as:
   </p>
 
   <ul>
@@ -53,8 +53,8 @@
   <h3>How to book a room</h3>
 
   <p>
-    The venue does not have a booking website so please let us know in your RSVP
-    whether you would like to book a room.
+    North Cadbury Court does not have a booking website, so please let us know
+    in your RSVP whether you would like to book a room.
   </p>
   <p>
     If you have additional requirements for your room, please say let us know
@@ -75,9 +75,9 @@
   <h2>Alternative accommodation</h2>
 
   <p>
-    If you are unable to stay at the venue but would still like to be nearby, we
-    have provided some alternative options below. Please note, offsite guests
-    are unable to stay at the venue beyond midnight.
+    If you are unable to stay at North Cadbury Court but would still like to be
+    nearby, we have provided some alternative options below. Please note,
+    offsite guests are unable to stay at North Cadbury Court beyond midnight.
   </p>
 
   <h3>The Queens Arms, Corton Denham</h3>
