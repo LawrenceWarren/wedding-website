@@ -1,10 +1,16 @@
 <script>
   let now = $state(Date.now());
-  const target_time = new Date("2026-08-10T13:00:00+01:00").getTime();
+  const check_in_time = new Date("2026-08-10T13:00:00+01:00").getTime();
+  const check_out_time = new Date("2026-08-12T14:00:00+01:00").getTime();
 
   // Remaining seconds
   let seconds_remaining = $derived(
-    Math.max(0, Math.floor((target_time - now) / 1000))
+    Math.max(0, Math.floor((check_in_time - now) / 1000))
+  );
+
+  let countdown_finished = $derived(seconds_remaining === 0);
+  let wedding_finished = $derived(
+    Math.max(0, Math.floor((check_out_time - now) / 1000)) === 0
   );
 
   let counter_elements = $derived([
@@ -37,28 +43,31 @@
 </script>
 
 <div class="countdown" role="timer" aria-live="polite" aria-atomic="true">
-  <div class="main_text">👰‍♀️ Time remaining 🤵‍♂️</div>
-  <div class="sub_text">until 1pm, August 10, 2026</div>
+  {#if !countdown_finished}
+    <div class="main_text">👰‍♀️ Time remaining 🤵‍♂️</div>
+    <div class="sub_text">until 1pm, August 10, 2026</div>
 
-  <div class="time_parts">
-    {#each counter_elements as part}
-      <div class="time_part">
-        <div class="time_value">{part.value}</div>
-        <div class="time_label">{part.label}</div>
-      </div>
-    {/each}
-  </div>
+    <div class="time_parts">
+      {#each counter_elements as part}
+        <div class="time_part">
+          <div class="time_value">{part.value}</div>
+          <div class="time_label">{part.label}</div>
+        </div>
+      {/each}
+    </div>
+  {:else if !wedding_finished}
+    <div class="main_text">💃 Let's party 🕺</div>
+    <div class="sub_text">enjoy the wedding!</div>
+  {:else}
+    <div class="main_text">❤️ Don't cry because it's over ❤️</div>
+    <div class="sub_text">smile because it happened</div>
+  {/if}
 </div>
 
 <style>
   .countdown {
-    font-family:
-      system-ui,
-      -apple-system,
-      "Segoe UI",
-      Roboto,
-      "Helvetica Neue",
-      Arial;
+    font-family: "Poppins";
+
     display: flex;
     flex-direction: column;
     align-items: center;
