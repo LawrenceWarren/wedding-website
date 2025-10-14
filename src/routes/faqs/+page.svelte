@@ -2,7 +2,7 @@
   import TextColumn from "$lib/components/text_column.svelte";
   import BurgerMenu from "$lib/components/burger_menu.svelte";
   import ImageBanner from "$lib/components/image_banner.svelte";
-  import header_img from "$lib/assets/cheersing.webp";
+  import header_img from "$lib/assets/ring-on-table.webp";
 </script>
 
 <svelte:head>
@@ -23,12 +23,20 @@
 </ImageBanner>
 
 <TextColumn>
-  <h2>Will there be an open bar?</h2>
+  <h2>Will there be food?</h2>
   <p>
-    Yes. Drinks are on us - we will have welcome drinks, wine and beer with
-    dinner, and an open bar for the party after the ceremony. While we will not
-    be stocking every possible drink, there should be a good enough range to
-    have a great time!
+    Yes. We can provide everyone with a lunch and a dinner on the day of the
+    ceremony, as well as a dinner on check in day, and a lunch on the day of
+    checkout.
+  </p>
+  <p>
+    For those staying overnight at North Cadbury Court, breakfast will also be
+    provided.
+  </p>
+  <p>
+    Every meal will have a vegetarian and vegan alternative, and we can cater to
+    any dietary needs you may have. Just let us know what you need via the RSVP
+    form.
   </p>
 
   <h2>Can I bring my own food and drinks?</h2>

@@ -26,15 +26,7 @@
   let meal: "beef" | "aubergine" | "" = "";
 
   let dietaryOther = "";
-  const commonDietaryRequirements = [
-    "Vegan",
-    "Vegetarian",
-    "Pescatarian",
-    "Halal",
-    "Kosher",
-    "Gluten free",
-    "Nut allergy",
-  ];
+  const commonDietaryRequirements = ["Vegan", "Vegetarian", "Gluten free"];
   let selectedCommon: Record<string, boolean> = {};
   onMount(() => {
     for (const item of commonDietaryRequirements) selectedCommon[item] = false;
@@ -241,7 +233,7 @@
           </select>
         </label>
         <label>
-          Arrival time
+          Approximate arrival hour
           <input type="time" bind:value={arriveTime} />
         </label>
         <label>
@@ -254,7 +246,7 @@
           </select>
         </label>
         <label>
-          Leaving time
+          Approximate departure hour
           <input type="time" bind:value={leaveTime} />
         </label>
       </div>

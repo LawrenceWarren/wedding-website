@@ -1,4 +1,6 @@
 <script>
+  import header_img from "$lib/assets/looking-back.webp";
+  import ImageBanner from "$lib/components/image_banner.svelte";
   import TextColumn from "$lib/components/text_column.svelte";
   import BurgerMenu from "$lib/components/burger_menu.svelte";
 </script>
@@ -11,11 +13,19 @@
   />
 </svelte:head>
 
-<TextColumn>
-  <h1>Attire</h1>
+<ImageBanner
+  src={header_img}
+  alt="Jonas looking back into the camera in front of a beautiful vista"
+  img_filter="brightness(0.8)"
+  margin_bottom="2vh"
+>
+  <h1 class="banner">Attire</h1>
+  <h2 class="banner">Guidance on what to wear</h2>
+</ImageBanner>
 
+<TextColumn>
   <p>
-    We would love to see our family and friends get dressed up for our big day.
+    We would love to see our family and friends get dressed up for our big day!
   </p>
 
   <h2>Filipino welcome dinner</h2>

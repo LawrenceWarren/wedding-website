@@ -1,5 +1,5 @@
 <script>
-  import header_image from "$lib/assets/ring-on-table.webp";
+  import header_img from "$lib/assets/cheersing.webp";
 
   import TextColumn from "$lib/components/text_column.svelte";
   import BurgerMenu from "$lib/components/burger_menu.svelte";
@@ -15,7 +15,7 @@
 </svelte:head>
 
 <ImageBanner
-  src={header_image}
+  src={header_img}
   alt="The ring on Jonas finger while the couple hold hands"
   img_filter="brightness(0.95)"
 >
@@ -37,4 +37,4 @@
   </p>
 </TextColumn>
 
-<BurgerMenu />
+<BurgerMenu burgerColor="var(--bg-color)" />

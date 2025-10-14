@@ -1,10 +1,15 @@
 :root {
-  --bg-color: #faf9f6;
+  --bg-color: #f7f6fa;
+  /*--bg-color: #faf9f6;*/
   --primary-color: hsl(360, 80%, 45%);
   --secondary-color: hsl(360, 80%, 30%);
   --highlight-color: hsl(360, 80%, 60%);
   --font-color: #121212;
   --font-light: #faf9f6;
+}
+
+.fancy {
+  font-family: "adobe-caslon-pro";
 }
 
 h1.banner,

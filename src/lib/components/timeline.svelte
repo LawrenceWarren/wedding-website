@@ -7,20 +7,22 @@
     {
       date: "August 10th",
       events: [
-        "1:00pm · Check in opens",
-        "5:00pm · Filipino welcome dinner",
-        "8:30pm · Games night",
+        { time: "1:00pm", event: "Check in opens" },
+        { time: "5:00pm", event: "Filipino welcome dinner" },
+        { time: "8:30pm", event: "Games night" },
       ],
     },
     {
       date: "August 11th",
-      events: ["2:00pm · Wedding Ceremony (to be seated by 2:30pm)"],
+      events: [
+        { time: "2:00pm", event: "Wedding Ceremony (to be seated by 2:30pm)" },
+      ],
     },
     {
       date: "August 12th",
       events: [
-        "11:30am-1:00pm · Farewell pizza lunch",
-        "2:00pm · Check out closes",
+        { time: "11:30am-1:00pm", event: "Farewell pizza lunch" },
+        { time: "2:00pm", event: "Check out closes" },
       ],
     },
   ];
@@ -31,11 +33,17 @@
 >
   {#each timeline as day, i}
     <li>
-      <div class="time">
+      <div class="date">
         <b>{day.date}</b>
       </div>
       {#each day.events as events}
-        <p>{events}</p>
+        <div class="event">
+          <i class="fancy">{events.time}</i>
+          <p class="dot">·</p>
+          <p>
+            {events.event}
+          </p>
+        </div>
       {/each}
     </li>
   {/each}
@@ -48,6 +56,11 @@
     padding-top: 1vh;
     padding-bottom: 1vh;
     padding-left: 5vw;
+  }
+
+  .dot {
+    padding-left: 4px;
+    padding-right: 4px;
   }
 
   li {
@@ -84,7 +97,7 @@
     padding-bottom: 0;
   }
 
-  .time {
+  .date {
     width: fit-content;
     color: var(--font-color);
     font-weight: 500;
@@ -93,7 +106,13 @@
     top: var(--top-adjustment);
   }
 
-  p {
+  .event {
+    display: flex;
+    flex-direction: row;
+  }
+
+  p,
+  i {
     width: fit-content;
     color: var(--font-color);
     line-height: 1.5;
