@@ -7,10 +7,10 @@
 </script>
 
 <svelte:head>
-  <title>Gifts - Jonas & Andrew</title>
+  <title>Gifts - Jonas & Andy</title>
   <meta
     name="description"
-    content="A registry of wedding gift ideas for Jonas and Andrew."
+    content="A registry of wedding gift ideas for Jonas and Andy."
   />
 </svelte:head>
 

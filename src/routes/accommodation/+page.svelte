@@ -6,10 +6,10 @@
 </script>
 
 <svelte:head>
-  <title>Accommodation - Jonas & Andrew</title>
+  <title>Accommodation - Jonas & Andy</title>
   <meta
     name="description"
-    content="Information about where you can stay for Jonas' and Andrew's wedding."
+    content="Information about where you can stay for Jonas' and Andy's wedding."
   />
 </svelte:head>
 

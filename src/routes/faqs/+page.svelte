@@ -6,16 +6,16 @@
 </script>
 
 <svelte:head>
-  <title>FAQs - Jonas & Andrew</title>
+  <title>FAQs - Jonas & Andy</title>
   <meta
     name="description"
-    content="Commonly asked questions, and their answers, for Jonas' and Andrew's wedding."
+    content="Commonly asked questions, and their answers, for Jonas' and Andy's wedding."
   />
 </svelte:head>
 
 <ImageBanner
   src={header_img}
-  alt="Jonas and Andrew clinking glasses"
+  alt="Jonas and Andy clinking glasses"
   img_filter="brightness(0.86)"
 >
   <h1 class="banner">FAQs</h1>
@@ -81,7 +81,7 @@
 
   <p>Please contact us with any more queries!</p>
   <address>
-    <b>Andrew</b> - <a href="tel:+447910678521">07910 678521</a>
+    <b>Andy</b> - <a href="tel:+447910678521">07910 678521</a>
   </address>
   <address>
     <b>Jonas</b> - <a href="tel:+447894563744">07894 563744</a>

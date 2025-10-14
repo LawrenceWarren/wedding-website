@@ -150,16 +150,16 @@
 </script>
 
 <svelte:head>
-  <title>RSVP - Jonas & Andrew</title>
+  <title>RSVP - Jonas & Andy</title>
   <meta
     name="description"
-    content="A form to let Jonas and Andrew know if you will be able to attend their wedding, and any additional requirements you may have."
+    content="A form to let Jonas and Andy know if you will be able to attend their wedding, and any additional requirements you may have."
   />
 </svelte:head>
 
 <ImageBanner
   src={header_img}
-  alt="Jonas and Andrew kissing in front of a gorgeous vista"
+  alt="Jonas and Andy kissing in front of a gorgeous vista"
   img_filter="brightness(0.8)"
   margin_bottom="2vh"
 >

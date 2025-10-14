@@ -12,19 +12,28 @@
 </script>
 
 <svelte:head>
-  <title>Jonas & Andrew</title>
+  <title>Jonas & Andy</title>
   <meta
     name="description"
-    content="The website for the wedding of Jonas Pantaleon and Andrew George at North Cadbury Court, Somerset, from August 10th until August 12th 2026."
+    content="The website for the wedding of Jonas Pantaleon and Andy George at North Cadbury Court, Somerset, from August 10th until August 12th 2026."
   />
 </svelte:head>
 
 <ImageBanner
   src={header_image}
-  alt="Jonas and Andrew after getting engaged"
+  alt="Jonas and Andy after getting engaged"
   img_filter="brightness(0.95)"
 >
-  <h1 class="banner">Jonas & Andrew</h1>
+  <div class="row">
+    <h1 class="banner">Jonas</h1>
+    <h1 class="banner fancy">
+      <i
+        style="font-size: 1.6rem; top: 5px; position: relative; padding-left: 6px; padding-right: 5px;"
+        >and</i
+      >
+    </h1>
+    <h1 class="banner">Andy</h1>
+  </div>
   <h2 class="banner">10th-12th August, 2026 · North Cadbury Court, Somerset</h2>
   <a class="banner" href="/rsvp">RSVP</a>
 </ImageBanner>
@@ -36,12 +45,9 @@
   </h1>
 
   <div class="photo-grid">
-    <img src={smiling_image} alt="Andrew and Jonas smiling" />
+    <img src={smiling_image} alt="Jonas and Andy smiling" />
     <img src={ring_image} alt="The wedding ring on Jonas' finger" />
-    <img
-      src={kiss_image}
-      alt="Andrew and Jonas kissing after getting engaged"
-    />
+    <img src={kiss_image} alt="Jonas and Andy kissing after getting engaged" />
   </div>
 </div>
 
@@ -71,6 +77,11 @@
 <BurgerMenu burgerColor="var(--bg-color)" />
 
 <style>
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
   .bottom-p {
     margin-bottom: 0;
   }

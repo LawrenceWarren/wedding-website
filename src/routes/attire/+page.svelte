@@ -6,10 +6,10 @@
 </script>
 
 <svelte:head>
-  <title>Attire - Jonas & Andrew</title>
+  <title>Attire - Jonas & Andy</title>
   <meta
     name="description"
-    content="Advice on what to wear for Jonas' and Andrew's wedding."
+    content="Advice on what to wear for Jonas' and Andy's wedding."
   />
 </svelte:head>
 
