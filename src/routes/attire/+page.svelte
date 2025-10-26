@@ -44,7 +44,7 @@
   <h2>Ceremony</h2>
 
   <p>
-    Please dress in suits or long dresses. Bright and summery for (finger
+    Please dress in suits or long dresses. Bright and summery for (fingers
     crossed) an outdoor wedding. <b>TODO: Colour palette and images</b>
   </p>
 

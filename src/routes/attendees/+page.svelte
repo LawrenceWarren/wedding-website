@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { writable } from "svelte/store";
+  import { env } from "$env/dynamic/private";
 
   let code = "";
   let error = "";

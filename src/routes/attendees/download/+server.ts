@@ -5,7 +5,7 @@ import { json } from "@sveltejs/kit";
 const sql = neon(env.DATABASE_URL);
 
 // Replace this with your actual 6-digit code
-const ATTENDEE_DOWNLOAD_CODE = "123456";
+const ATTENDEE_DOWNLOAD_CODE = env.SIX_FIGURE_CODE;
 
 // Helper to convert DB rows to CSV
 function rowsToCSV(rows: any[]) {
