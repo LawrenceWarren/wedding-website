@@ -1,6 +1,4 @@
 <script lang="ts">
-  import { env } from "$env/dynamic/private";
-
   let code = "";
   let error = "";
   let downloading = false;
