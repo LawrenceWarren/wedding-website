@@ -4,6 +4,8 @@
   import TextColumn from "$lib/components/text_column.svelte";
   import header_img from "$lib/assets/kiss-landscape.webp";
 
+  import { fade } from "svelte/transition";
+  import { goto } from "$app/navigation";
   import { onMount } from "svelte";
 
   const names = [
@@ -127,6 +129,7 @@
   let success_message = "";
   let submission_error = "";
   let submitted = false;
+  let past_success = false;
   let submitted_data: any = null;
   let form_error = "";
 
@@ -139,6 +142,10 @@
   ];
 
   onMount(() => {
+    const url = new URL(window.location.href);
+    if (url.searchParams.get("past_success") === "true") {
+      past_success = true;
+    }
     for (const item of COMMON_DIETARY_REQUIREMENTS)
       selected_common[item] = false;
   });
@@ -253,8 +260,11 @@
       submitted = true;
 
       if (result.success) {
-        success_message = "✅ Your RSVP was successfully submitted. Thank you!";
+        success_message = `Your RSVP for ${full_name} was successfully submitted. Thank you!`;
         submission_error = "";
+        const new_url = new URL(window.location.href);
+        new_url.searchParams.set("past_success", "true");
+        window.history.replaceState({}, "", new_url.toString());
       } else {
         success_message = "";
         submission_error =
@@ -293,7 +303,7 @@
   <p>We look forward to seeing you! Fill out the form below.</p>
 </TextColumn>
 
-{#if !submitted}
+{#if !submitted && !past_success}
   <form
     class="form-container"
     on:submit|preventDefault={handle_submit}
@@ -491,11 +501,11 @@
     </div>
   </form>
 {:else if success_message}
-  <div class="form-container" role="status">
+  <div class="form-container" role="status" transition:fade>
     <p class="success">{success_message}</p>
   </div>
 {:else if submission_error}
-  <div class="form-container" role="alert">
+  <div class="form-container" role="alert" transition:fade>
     <p class="error">{submission_error}</p>
     <button
       on:click={() => {
@@ -506,6 +516,14 @@
     >
       Go back to form
     </button>
+  </div>
+{:else if past_success}
+  <div class="form-container" role="status" transition:fade>
+    <p class="success">
+      You've successfully submitted this form. Thanks! <a href="/"
+        >Back to homepage</a
+      >
+    </p>
   </div>
 {/if}
 
@@ -643,15 +661,6 @@
   .error {
     color: var(--highlight-color);
     margin-bottom: 1rem;
-  }
-
-  .submission-preview {
-    max-width: 700px;
-    margin: 1.5rem auto;
-    padding: 1rem;
-    background: #f9f9f9; /*TODO: Pick other white*/
-    border: 1px solid #ddd; /*TODO: Pick other white*/
-    border-radius: 6px;
   }
 
   .note {
