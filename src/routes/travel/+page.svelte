@@ -1,6 +1,8 @@
 <script>
   import TextColumn from "$lib/components/text_column.svelte";
   import BurgerMenu from "$lib/components/burger_menu.svelte";
+  import ImageBanner from "$lib/components/image_banner.svelte";
+  import header_img from "$lib/assets/somerset-stock.webp";
 </script>
 
 <svelte:head>
@@ -11,9 +13,16 @@
   />
 </svelte:head>
 
-<TextColumn>
-  <h1>Travel</h1>
+<ImageBanner
+  src={header_img}
+  alt="Glastonbury Tor on a sunny day"
+  img_filter="brightness(0.85)"
+>
+  <h1 class="banner">Travel</h1>
+  <h2 class="banner">How to join us in Somerset</h2>
+</ImageBanner>
 
+<TextColumn>
   <p>The entire wedding and all events will be held at:</p>
 
   <address class="site-address">
@@ -73,7 +82,7 @@
   </p>
 </TextColumn>
 
-<BurgerMenu />
+<BurgerMenu burgerColor="var(--bg-color)" />
 
 <style>
   .site-address {
