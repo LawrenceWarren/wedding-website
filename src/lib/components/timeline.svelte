@@ -15,7 +15,11 @@
     {
       date: "August 11th",
       events: [
-        { time: "2:00pm", event: "Wedding Ceremony (to be seated by 2:30pm)" },
+        {
+          time: "2:00pm",
+          event:
+            "Wedding Ceremony (to be seated by 2:30pm) with reception to follow",
+        },
       ],
     },
     {

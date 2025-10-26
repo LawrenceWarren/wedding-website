@@ -14,7 +14,7 @@
 <TextColumn>
   <h1>Travel</h1>
 
-  <p>The entire wedding and all of it's events will be held at:</p>
+  <p>The entire wedding and all events will be held at:</p>
 
   <address class="site-address">
     <a
@@ -33,22 +33,43 @@
   <h2>Travelling by car</h2>
   <p>
     There is a car park with ample free parking and four free electric charging
-    points at North Cadbury Court.
+    points.
   </p>
 
   <h2>Travelling by rail</h2>
   <p>
     The nearest train station is Castle Cary, which is one and a half hours from
-    London Paddington, and then a ten minute drive to North Cadbury Court.
-    <b>TODO: link to a taxi service</b>
+    London Paddington, and then a ten minute drive to the venue.
   </p>
 
-  <h2>Travel from Cambridgeshire</h2>
+  <h2>Travelling from Cambridgeshire</h2>
   <p>
     To reduce the number of people driving, we are planning to organise a coach
-    from Cambridgeshire (likely Northstowe) to North Cadbury Court and back. A
-    rough quote suggested it would be a £50 return per-person. Please let us
-    know if you are interested via the RSVP form.
+    from Cambridgeshire (likely Northstowe) to the venue and back. A rough quote
+    suggested it would be around £50 return per-person. Please let us know if
+    you are interested in your RSVP.
+  </p>
+
+  <h2>Local taxi services</h2>
+  <h3>Target Taxis - Wincanton</h3>
+  <ul>
+    <li>24-hour service, advance booking required</li>
+    <li>07703 565754</li>
+    <li><a href="mailto:info@targettaxis.co.uk">info@targettaxis.co.uk</a></li>
+  </ul>
+
+  <h3>Destination Travel - Wincanton</h3>
+  <ul>
+    <li>Service - until midnight, advance booking preferred</li>
+    <li>01963 34441</li>
+    <li>
+      <a href="https://destinationtravelwincanton.co.uk/">Link to website</a>
+    </li>
+  </ul>
+
+  <p>
+    We have a longer taxi service list from the venue, please contact us if you
+    would like us to share it with you.
   </p>
 </TextColumn>
 

@@ -25,10 +25,11 @@
 
 <TextColumn>
   <p>
-    We would love to see our family and friends get dressed up for our big day!
+    We would love to see our family and friends get dressed up for our
+    celebrations!
   </p>
 
-  <h2>Filipino welcome dinner</h2>
+  <h2>Filipino Welcome Dinner</h2>
 
   <p>
     We would love for you to dress in traditional cream Filipino wedding attire,
@@ -36,25 +37,60 @@
   </p>
 
   <p>
-    If you would like to wear this and do not already have the items then a few
-    online suppliers are listed below: <b>TODO list suppliers</b>: If not please
-    wear cream/white dress or cream/white shirt with black trousers.
+    If you would like to wear this, but don't already have the items, then a few
+    online suppliers are below.
   </p>
+
+  <p>
+    If not, please wear a cream/white dress or cream/white shirt with black
+    trousers.
+  </p>
+
+  <h3>Suppliers</h3>
+
+  <h4>Barongwold</h4>
+
+  <ul>
+    <li>
+      <a href="https://barongworld.com/collections/pina-cocoon-barong"
+        >Barong Tagalog</a
+      >
+    </li>
+    <li>
+      <a href="https://barongworld.com/collections/bolero-filipiniana"
+        >Bolero Filipiniana</a
+      >
+    </li>
+  </ul>
+
+  <h4>Mestiza Filipina</h4>
+
+  <ul>
+    <li>
+      <a href="https://mestizafilipina.co/collections/barong-tagalog"
+        >Barong Tagalog</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://mestizafilipina.co/collections/modern-filipiniana-mestiza-boleros"
+        >Bolero Filipiniana</a
+      >
+    </li>
+  </ul>
+
+  <i>Use coupon code: <b>JONASPANTALEON</b> for 10% off</i>
 
   <h2>Ceremony</h2>
 
   <p>
     Please dress in suits or long dresses. Bright and summery for (fingers
-    crossed) an outdoor wedding. <b>TODO: Colour palette and images</b>
+    crossed) an outdoor wedding.<b>TODO: Colour palette and images</b>
   </p>
 
-  <h2>The rest of the time</h2>
-
   <p>
-    There will be plenty of downtime for you to partake in the activities and
-    enjoy the greenery of North Cadbury Court, particularly in the afternoon
-    before the Filipino welcome party, and the morning after the ceremony. Feel
-    free to where whatever you feel comfortable in.
+    For the rest of the time, please feel free to where whatever you feel
+    comfortable in.
   </p>
 </TextColumn>
 

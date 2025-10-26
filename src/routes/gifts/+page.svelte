@@ -20,16 +20,18 @@
   img_filter="brightness(0.95)"
 >
   <h1 class="banner">Gifts</h1>
-  <h2 class="banner">Contribute to our honeymoon fund</h2>
 </ImageBanner>
 
 <TextColumn>
   <p>
-    There is absolutely no expectations of gifts, we are just happy to be
-    celebrating with you. However, if you would like to gift anything, we would
-    most appreciate any contributions towards our honeymoon so that we can make
-    more memories. <b>TODO: Link to funding/donation site</b>
+    There's no expectations for gifts, we are just happy to celebrate with you.
+    But if you'd like to give something, we'd love contributions towards our
+    honeymoon (to make more memories!).
   </p>
+
+  <a href="https://prezola.com/buy/view/260479"
+    >Contribute here [Make this a sexy button]</a
+  >
 
   <p>
     If a different gift feels more your style, we will of course treasure that

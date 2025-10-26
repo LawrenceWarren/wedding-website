@@ -16,8 +16,8 @@
   <div style="display: flex; flex-direction: column; align-items: center;">
     <a style="font-size: 2em" href="/">Home</a>
     <a style="font-size: 2em" href="/accommodation">Accommodation</a>
-    <a style="font-size: 2em" href="/attire">Attire</a>
     <a style="font-size: 2em" href="/travel">Travel</a>
+    <a style="font-size: 2em" href="/attire">Attire</a>
     <a style="font-size: 2em" href="/gifts">Gifts</a>
     <a style="font-size: 2em" href="/faqs">FAQs</a>
     <br />

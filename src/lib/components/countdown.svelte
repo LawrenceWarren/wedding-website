@@ -42,27 +42,26 @@
   });
 </script>
 
-<div class="countdown" role="timer" aria-live="polite" aria-atomic="true">
-  {#if !countdown_finished}
-    <div class="main_text">👰‍♀️ Time remaining 🤵‍♂️</div>
+{#if !countdown_finished && !wedding_finished}
+  <div class="countdown" role="timer" aria-live="polite" aria-atomic="true">
+    <div class="main_text">Time remaining</div>
     <div class="sub_text">until 1pm, August 10, 2026</div>
 
-    <div class="time_parts">
-      {#each counter_elements as part}
-        <div class="time_part">
-          <div class="time_value">{part.value}</div>
-          <div class="time_label">{part.label}</div>
-        </div>
-      {/each}
-    </div>
-  {:else if !wedding_finished}
-    <div class="main_text">💃 Let's party 🕺</div>
-    <div class="sub_text">get off your phone, enjoy the wedding!</div>
-  {:else}
-    <div class="main_text">❤️ Don't cry because it's over ❤️</div>
-    <div class="sub_text">smile because it happened</div>
-  {/if}
-</div>
+    {#if !countdown_finished}
+      <div class="time_parts">
+        {#each counter_elements as part}
+          <div class="time_part">
+            <div class="time_value">{part.value}</div>
+            <div class="time_label">{part.label}</div>
+          </div>
+        {/each}
+      </div>
+    {:else if !wedding_finished}
+      <div class="main_text">Let's party</div>
+      <div class="sub_text">get off your phone, enjoy the wedding!</div>
+    {/if}
+  </div>
+{/if}
 
 <style>
   .countdown {

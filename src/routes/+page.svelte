@@ -61,12 +61,12 @@
   </p>
   <p>
     Below are some of the main events; around these times we are hoping everyone
-    can relax and enjoy the activities at North Cadbury Court together.
+    can relax and enjoy the activities at the venue together.
   </p>
   <p class="bottom-p">
     We will be providing the food and drinks, from a hog roast at the welcome
-    dinner on Monday through to a farewell pizza on Wednesday - vegetarian,
-    vegan, and gluten free options are available for every meal.
+    dinner on Monday through to a farewell pizza on Wednesday
+    <i>(v, vg, and gf options are available for every meal)</i>.
   </p>
 
   <Timeline />

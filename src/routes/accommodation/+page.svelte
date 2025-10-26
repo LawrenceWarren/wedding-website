@@ -21,8 +21,8 @@
 <TextColumn>
   <h2>Accommodation at North Cadbury Court</h2>
   <p>
-    We would love for you to stay with us at the wedding venue, North Cadbury
-    Court, for the whole celebration.
+    We would love to invite you to stay with us at the venue for the whole
+    celebration.
   </p>
 
   <h3>Prices</h3>
@@ -34,12 +34,12 @@
 
   <ul>
     <li>Single en-suite: £200</li>
-    <li>Double en-suite: £400</li>
+    <li>Double en-suite: £400 (£200 per person)</li>
   </ul>
 
   <p>
-    This price covers accommodation, breakfast for both mornings, and access to
-    all of the facilities at North Cadbury Court such as:
+    This price covers accommodation, continental breakfast for both mornings,
+    and access to all of the facilities at North Cadbury Court such as:
   </p>
 
   <ul>
@@ -47,39 +47,38 @@
     <li>Sauna</li>
     <li>3-hole golf course</li>
     <li>Squash and tennis courts</li>
-    <li>More!</li>
+    <li>Plus more!</li>
   </ul>
-
-  <p>
-    If you have additional requirements for your room, please say let us know
-    via the RSVP form. Some rooms have unique features, such as wheelchair
-    access, a bath or a walk-in shower, or space for extra beds, so your needs
-    can be catered for.
-  </p>
-
-  <p>Rooms will be allocated on a first-come, first-served basis.</p>
 
   <h3>How to book a room</h3>
 
   <p>
     North Cadbury Court does not have a booking website, so please let us know
-    via the RSVP form whether you would like to book a room.
+    in your RSVP whether you would like to book a room.
   </p>
+
+  <p>
+    Some rooms have unique features so please let us know if there is something
+    important to you (e.g. wheelchair access, bath or walk in shower, space for
+    extra beds).
+  </p>
+
+  <p>Rooms will be allocated on a first-come, first-served basis.</p>
 
   <h3>Paying for rooms</h3>
 
   <p>
     We will confirm your room as soon as we can after receiving your RSVP. After
-    confirming the room, we will send you our bank details so you can make a
+    confirming the room, we will send you the bank details so you can make a
     transfer. If anything changes, please let us know as soon as possible.
   </p>
 
   <h2>Alternative accommodation</h2>
 
   <p>
-    If you are unable to stay at North Cadbury Court but would still like to be
-    nearby, we have provided some alternative options below. Please note,
-    offsite guests are unable to stay at North Cadbury Court beyond midnight.
+    If you are unable to stay at the venue but would still like to be nearby, we
+    have provided some alternative options below. Please note, offsite guests
+    are unable to stay at the venue beyond midnight.
   </p>
 
   <h3>The Queens Arms, Corton Denham</h3>
