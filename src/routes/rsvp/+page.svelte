@@ -124,6 +124,8 @@
 
   let coach: "yes" | "no" | "" = "";
 
+  let success_message = "";
+  let submission_error = "";
   let submitted = false;
   let submitted_data: any = null;
   let form_error = "";
@@ -192,7 +194,7 @@
     return true;
   }
 
-  function handle_submit(e: Event) {
+  async function handle_submit(e: Event) {
     e.preventDefault();
     if (!validate()) {
       submitted = false;
@@ -240,7 +242,32 @@
         attendance === "yes_whole" || attendance === "yes_some" ? coach : null,
     };
 
-    submitted = true;
+    try {
+      const response = await fetch("/rsvp", {
+        method: "PUT",
+        body: JSON.stringify({ submitted_data }),
+        headers: { "Content-Type": "application/json" },
+      });
+
+      const result = await response.json();
+      submitted = true;
+
+      if (result.success) {
+        success_message = "✅ Your RSVP was successfully submitted. Thank you!";
+        submission_error = "";
+      } else {
+        success_message = "";
+        submission_error =
+          result.error ||
+          "There was a problem submitting your RSVP. Please try again.";
+      }
+    } catch (err) {
+      submitted = true;
+      success_message = "";
+      submission_error =
+        "An unexpected error occurred while submitting your RSVP. Please try again later.";
+      console.error(err);
+    }
   }
 </script>
 
@@ -266,207 +293,220 @@
   <p>We look forward to seeing you! Fill out the form below.</p>
 </TextColumn>
 
-<form
-  class="form-container"
-  on:submit|preventDefault={handle_submit}
-  aria-labelledby="rsvp-heading"
->
-  {#if form_error}
-    <div role="alert" class="error">{form_error}</div>
-  {/if}
-
-  <div class="form-group">
-    <label class="legend_label" for="full_name">Name</label>
-    <select id="full_name" bind:value={full_name} required>
-      <option value="">Select a name</option>
-      {#each names as name}
-        <option value={name}>{name}</option>
-      {/each}
-    </select>
-  </div>
-  <div class="form-group">
-    <label class="legend_label" for="email">Email address</label>
-    <input id="email" type="email" bind:value={email} required />
-  </div>
-  <div class="form-group">
-    <label class="legend_label" for="phone">Phone number</label>
-    <input id="phone" type="tel" bind:value={phone} required />
-  </div>
-
-  <fieldset>
-    <legend>Are you able to attend?</legend>
-    <label
-      ><input
-        type="radio"
-        name="attendance"
-        value="yes_whole"
-        on:change={() => (attendance = "yes_whole")}
-        checked={attendance === "yes_whole"}
-      /> Yes (whole time)</label
-    >
-    <label
-      ><input
-        type="radio"
-        name="attendance"
-        value="yes_some"
-        on:change={() => (attendance = "yes_some")}
-        checked={attendance === "yes_some"}
-      /> Yes (some)</label
-    >
-    {#if attendance === "yes_some"}
-      <div class="nested-group">
-        <label>
-          Arrival date
-          <select bind:value={arrival_date}>
-            <option value="">Select date</option>
-            {#each AVAILABLE_DATES as d}
-              <option value={d.value}>{d.label}</option>
-            {/each}
-          </select>
-        </label>
-        <label>
-          Approximate arrival hour
-          <input type="time" bind:value={arrival_time} />
-        </label>
-        <label>
-          Leaving date
-          <select bind:value={leave_date}>
-            <option value="">Select date</option>
-            {#each AVAILABLE_DATES as d}
-              <option value={d.value}>{d.label}</option>
-            {/each}
-          </select>
-        </label>
-        <label>
-          Approximate departure hour
-          <input type="time" bind:value={leave_time} />
-        </label>
-      </div>
+{#if !submitted}
+  <form
+    class="form-container"
+    on:submit|preventDefault={handle_submit}
+    aria-labelledby="rsvp-heading"
+  >
+    {#if form_error}
+      <div role="alert" class="error">{form_error}</div>
     {/if}
-    <label
-      ><input
-        type="radio"
-        name="attendance"
-        value="no"
-        on:change={() => (attendance = "no")}
-        checked={attendance === "no"}
-      /> No</label
-    >
-  </fieldset>
 
-  {#if attendance === "yes_whole" || attendance === "yes_some"}
+    <div class="form-group">
+      <label class="legend_label" for="full_name">Name</label>
+      <select id="full_name" bind:value={full_name} required>
+        <option value="">Select a name</option>
+        {#each names as name}
+          <option value={name}>{name}</option>
+        {/each}
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="legend_label" for="email">Email address</label>
+      <input id="email" type="email" bind:value={email} required />
+    </div>
+    <div class="form-group">
+      <label class="legend_label" for="phone">Phone number</label>
+      <input id="phone" type="tel" bind:value={phone} required />
+    </div>
+
     <fieldset>
-      <legend
-        >Would you like to book accommodation at North Cadbury Court?</legend
+      <legend>Are you able to attend?</legend>
+      <label
+        ><input
+          type="radio"
+          name="attendance"
+          value="yes_whole"
+          on:change={() => (attendance = "yes_whole")}
+          checked={attendance === "yes_whole"}
+        /> Yes (whole time)</label
       >
-
+      <label
+        ><input
+          type="radio"
+          name="attendance"
+          value="yes_some"
+          on:change={() => (attendance = "yes_some")}
+          checked={attendance === "yes_some"}
+        /> Yes (some)</label
+      >
       {#if attendance === "yes_some"}
-        <p class="note">
-          Please note, guests who are able to stay both nights will be
-          prioritised for accommodation.
-        </p>
+        <div class="nested-group">
+          <label>
+            Arrival date
+            <select bind:value={arrival_date}>
+              <option value="">Select date</option>
+              {#each AVAILABLE_DATES as d}
+                <option value={d.value}>{d.label}</option>
+              {/each}
+            </select>
+          </label>
+          <label>
+            Approximate arrival hour
+            <input type="time" bind:value={arrival_time} />
+          </label>
+          <label>
+            Leaving date
+            <select bind:value={leave_date}>
+              <option value="">Select date</option>
+              {#each AVAILABLE_DATES as d}
+                <option value={d.value}>{d.label}</option>
+              {/each}
+            </select>
+          </label>
+          <label>
+            Approximate departure hour
+            <input type="time" bind:value={leave_time} />
+          </label>
+        </div>
       {/if}
       <label
         ><input
           type="radio"
-          name="accommodation"
-          value="yes"
-          on:change={() => (accommodation = "yes")}
-          checked={accommodation === "yes"}
-        /> Yes</label
-      >
-      {#if accommodation === "yes"}
-        <label>
-          Any extra requirements or comments
-          <textarea bind:value={accommodation_comments} rows={3}></textarea>
-        </label>
-      {/if}
-      <label
-        ><input
-          type="radio"
-          name="accommodation"
+          name="attendance"
           value="no"
-          on:change={() => (accommodation = "no")}
-          checked={accommodation === "no"}
+          on:change={() => (attendance = "no")}
+          checked={attendance === "no"}
         /> No</label
       >
     </fieldset>
 
-    <fieldset>
-      <legend
-        >Which main meal option would you like for the wedding dinner?</legend
-      >
-      <label
-        ><input
-          type="radio"
-          name="meal"
-          value="beef"
-          on:change={() => (meal = "beef")}
-          checked={meal === "beef"}
-        />Braised Beef Cheeks with Rainbow Carrots, Parsnip Puree & Truffle Jus</label
-      >
-      <label
-        ><input
-          type="radio"
-          name="meal"
-          value="aubergine"
-          on:change={() => (meal = "aubergine")}
-          checked={meal === "aubergine"}
-        />Aubergine Parmigana Rolls with Spinach & Ricotta served with Tomato
-        Compote and Pan-Fried Gnocchi</label
-      >
-    </fieldset>
-
-    <fieldset>
-      <legend>Please let us know of any dietary requirements</legend>
-      {#each COMMON_DIETARY_REQUIREMENTS as item}
-        <label
-          ><input type="checkbox" bind:checked={selected_common[item]} />
-          {item}</label
+    {#if attendance === "yes_whole" || attendance === "yes_some"}
+      <fieldset>
+        <legend
+          >Would you like to book accommodation at North Cadbury Court?</legend
         >
-      {/each}
-      <label>
-        Other (please specify)
-        <input placeholder="Please specify" bind:value={dietary_other} />
-      </label>
-    </fieldset>
 
-    <fieldset>
-      <legend
-        >Are you interested in booking a return journey on a coach from
-        Cambridgeshire to North Cadbury Court (approximately £50)</legend
-      >
-      <label
-        ><input
-          type="radio"
-          name="coach"
-          value="yes"
-          on:change={() => (coach = "yes")}
-          checked={coach === "yes"}
-        /> Yes</label
-      >
-      <label
-        ><input
-          type="radio"
-          name="coach"
-          value="no"
-          on:change={() => (coach = "no")}
-          checked={coach === "no"}
-        /> No</label
-      >
-    </fieldset>
-  {/if}
+        {#if attendance === "yes_some"}
+          <p class="note">
+            Please note, guests who are able to stay both nights will be
+            prioritised for accommodation.
+          </p>
+        {/if}
+        <label
+          ><input
+            type="radio"
+            name="accommodation"
+            value="yes"
+            on:change={() => (accommodation = "yes")}
+            checked={accommodation === "yes"}
+          /> Yes</label
+        >
+        {#if accommodation === "yes"}
+          <label>
+            Any extra requirements or comments
+            <textarea bind:value={accommodation_comments} rows={3}></textarea>
+          </label>
+        {/if}
+        <label
+          ><input
+            type="radio"
+            name="accommodation"
+            value="no"
+            on:change={() => (accommodation = "no")}
+            checked={accommodation === "no"}
+          /> No</label
+        >
+      </fieldset>
 
-  <div class="form-actions">
-    <button type="submit">Submit RSVP</button>
+      <fieldset>
+        <legend
+          >Which main meal option would you like for the wedding dinner?</legend
+        >
+        <label
+          ><input
+            type="radio"
+            name="meal"
+            value="beef"
+            on:change={() => (meal = "beef")}
+            checked={meal === "beef"}
+          />Braised Beef Cheeks with Rainbow Carrots, Parsnip Puree & Truffle
+          Jus</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="meal"
+            value="aubergine"
+            on:change={() => (meal = "aubergine")}
+            checked={meal === "aubergine"}
+          />Aubergine Parmigana Rolls with Spinach & Ricotta served with Tomato
+          Compote and Pan-Fried Gnocchi</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Please let us know of any dietary requirements</legend>
+        {#each COMMON_DIETARY_REQUIREMENTS as item}
+          <label
+            ><input type="checkbox" bind:checked={selected_common[item]} />
+            {item}</label
+          >
+        {/each}
+        <label>
+          Other (please specify)
+          <input placeholder="Please specify" bind:value={dietary_other} />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend
+          >Are you interested in booking a return journey on a coach from
+          Cambridgeshire to North Cadbury Court (approximately £50)</legend
+        >
+        <label
+          ><input
+            type="radio"
+            name="coach"
+            value="yes"
+            on:change={() => (coach = "yes")}
+            checked={coach === "yes"}
+          /> Yes</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="coach"
+            value="no"
+            on:change={() => (coach = "no")}
+            checked={coach === "no"}
+          /> No</label
+        >
+      </fieldset>
+    {/if}
+
+    <div class="form-actions">
+      <button type="submit">Submit RSVP</button>
+    </div>
+  </form>
+{:else if success_message}
+  <div class="form-container" role="status">
+    <p class="success">{success_message}</p>
   </div>
-</form>
-
-{#if submitted}
-  <section class="submission-preview">
-    <h3>Submission preview</h3>
-    <pre>{JSON.stringify(submitted_data, null, 2)}</pre>
-  </section>
+{:else if submission_error}
+  <div class="form-container" role="alert">
+    <p class="error">{submission_error}</p>
+    <button
+      on:click={() => {
+        submitted = false;
+        success_message = "";
+        submission_error = "";
+      }}
+    >
+      Go back to form
+    </button>
+  </div>
 {/if}
 
 <BurgerMenu />
