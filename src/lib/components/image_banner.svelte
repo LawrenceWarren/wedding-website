@@ -5,7 +5,7 @@
     alt,
     width = "100%",
     height = "clamp(400px, 90vh, 1000px)",
-    margin_bottom = "10vh",
+    margin_bottom = "3vh",
     img_filter = "none",
   } = $props();
 </script>

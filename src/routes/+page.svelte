@@ -23,6 +23,7 @@
   src={header_image}
   alt="Jonas and Andy after getting engaged"
   img_filter="brightness(0.95)"
+  margin_bottom="10vh"
 >
   <div class="row">
     <h1 class="banner">Jonas <i>&</i> Andy</h1>
