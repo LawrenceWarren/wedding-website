@@ -88,7 +88,7 @@
   .site-address {
     font-style: normal;
     line-height: 1.6;
-    background: #f9f9f9;
+    background: var(--bg-color);
     border-left: 4px solid #ccc;
     padding: 1em;
     border-radius: 6px;

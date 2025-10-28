@@ -26,7 +26,7 @@
   <h2>Will there be food?</h2>
   <p>
     Yes. We will providing meals across the three days of the celebration:
-    dinner on arrival night, lunch and dinner in the wedding day, and lunch on
+    dinner on arrival night, lunch and dinner on the wedding day, and lunch on
     the day of departure.
   </p>
   <p>

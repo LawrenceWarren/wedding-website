@@ -25,14 +25,17 @@
   img_filter="brightness(0.95)"
 >
   <div class="row">
-    <h1 class="banner">Jonas</h1>
-    <h1 class="banner fancy">
-      <i
+    <h1 class="banner">Jonas <i>&</i> Andy</h1>
+    <!--
+      <h1 class="banner">Jonas</h1>
+      <h1 class="banner fancy">
+        <i
         style="font-size: 1.6rem; top: 5px; position: relative; padding-left: 6px; padding-right: 5px;"
         >and</i
-      >
-    </h1>
-    <h1 class="banner">Andy</h1>
+        >
+      </h1>
+      <h1 class="banner">Andy</h1>
+      -->
   </div>
   <h2 class="banner">10th-12th August, 2026 · North Cadbury Court, Somerset</h2>
   <a class="banner" href="/rsvp">RSVP</a>
@@ -84,6 +87,15 @@
 
   .bottom-p {
     margin-bottom: 0;
+  }
+
+  h1.banner {
+    width: 80vw;
+  }
+
+  .banner > i {
+    font-weight: 400;
+    font-size: 2rem;
   }
 
   .sub-banner {

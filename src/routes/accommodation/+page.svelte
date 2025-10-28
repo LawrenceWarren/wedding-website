@@ -53,7 +53,7 @@
   <h3>How to book a room</h3>
 
   <p>
-    North Cadbury Court does not have a booking website, so please let us know
+    The venue does not have a booking website, so please let us know
     in your RSVP whether you would like to book a room.
   </p>
 
@@ -70,7 +70,7 @@
   <p>
     We will confirm your room as soon as we can after receiving your RSVP. After
     confirming the room, we will send you the bank details so you can make a
-    transfer. If anything changes, please let us know as soon as possible.
+    transfer. If anything changes, please let us know.
   </p>
 
   <h2>Alternative accommodation</h2>

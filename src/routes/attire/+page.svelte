@@ -33,7 +33,8 @@
 
   <p>
     We would love for you to dress in traditional cream Filipino wedding attire,
-    which is Barong Tagalog and Bolero Filipinianas.
+    which is Barong Tagalog (usually worn on top of a cream/white T-shirt or
+    vest) and Bolero Filipinianas (usually worn on top of a cream/white outfit).
   </p>
 
   <p>
@@ -48,22 +49,9 @@
 
   <h3>Suppliers</h3>
 
-  <h4>Barongwold</h4>
-
-  <ul>
-    <li>
-      <a href="https://barongworld.com/collections/pina-cocoon-barong"
-        >Barong Tagalog</a
-      >
-    </li>
-    <li>
-      <a href="https://barongworld.com/collections/bolero-filipiniana"
-        >Bolero Filipiniana</a
-      >
-    </li>
-  </ul>
-
   <h4>Mestiza Filipina</h4>
+
+  <p>If you are between sizes, we would recommend sizing up.</p>
 
   <ul>
     <li>
@@ -80,6 +68,21 @@
   </ul>
 
   <i>Use coupon code: <b>JONASPANTALEON</b> for 10% off</i>
+
+  <h4>Barongwold</h4>
+
+  <ul>
+    <li>
+      <a href="https://barongworld.com/collections/pina-cocoon-barong"
+        >Barong Tagalog</a
+      >
+    </li>
+    <li>
+      <a href="https://barongworld.com/collections/bolero-filipiniana"
+        >Bolero Filipiniana</a
+      >
+    </li>
+  </ul>
 
   <h2>Ceremony</h2>
 

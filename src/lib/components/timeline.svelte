@@ -110,9 +110,17 @@
     top: var(--top-adjustment);
   }
 
+  b {
+    text-decoration: underline;
+    font-size: 1.27rem;
+  }
+
   .event {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: start;
+    column-gap: 0.25rem;
+    width: 100%;
   }
 
   p,
@@ -121,6 +129,7 @@
     color: var(--font-color);
     line-height: 1.5;
     margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
 
     position: relative;
     top: var(--top-adjustment);
