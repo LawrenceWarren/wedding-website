@@ -25,7 +25,7 @@
 
 <style>
   main {
-    padding-bottom: 10vh;
+    padding-bottom: 5vh;
 
     display: flex;
     justify-content: center;
