@@ -3,6 +3,22 @@
   import ImageBanner from "$lib/components/image_banner.svelte";
   import TextColumn from "$lib/components/text_column.svelte";
   import BurgerMenu from "$lib/components/burger_menu.svelte";
+  import PhotoGrid from "$lib/components/photo_grid.svelte";
+
+  import mens_filipino from "$lib/assets/attire/mens-filipino.webp";
+  import mens_ceremony from "$lib/assets/attire/mens-ceremony.webp";
+  import womans_filipino from "$lib/assets/attire/womans-filipino.webp";
+  import womans_ceremony from "$lib/assets/attire/womans-ceremony.webp";
+
+  let filipino_photos = [
+    { src: womans_filipino, alt: "Women wearing Bolero Filipinianas" },
+    { src: mens_filipino, alt: "Men wearing Barong Tagalog" },
+  ];
+
+  let ceremony_photos = [
+    { src: womans_ceremony, alt: "Women wearing colourful dresses" },
+    { src: mens_ceremony, alt: "Men wearing colourful suits" },
+  ];
 </script>
 
 <svelte:head>
@@ -36,6 +52,8 @@
     which is Barong Tagalog (usually worn on top of a cream/white T-shirt or
     vest) and Bolero Filipinianas (usually worn on top of a cream/white outfit).
   </p>
+
+  <PhotoGrid photos={filipino_photos} />
 
   <p>
     If you would like to wear this, but don't already have the items, then a few
@@ -88,8 +106,10 @@
 
   <p>
     Please dress in suits or long dresses. Bright and summery for (fingers
-    crossed) an outdoor wedding.<b>TODO: Colour palette and images</b>
+    crossed) an outdoor wedding.
   </p>
+
+  <PhotoGrid photos={ceremony_photos} />
 
   <p>
     For the rest of the time, please feel free to where whatever you feel

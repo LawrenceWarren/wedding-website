@@ -9,6 +9,13 @@
   import ImageBanner from "$lib/components/image_banner.svelte";
   import TextColumn from "$lib/components/text_column.svelte";
   import Countdown from "$lib/components/countdown.svelte";
+  import PhotoGrid from "$lib/components/photo_grid.svelte";
+
+  let photos = [
+    { src: smiling_image, alt: "Jonas and Andy smiling" },
+    { src: ring_image, alt: "The wedding ring on Jonas' finger" },
+    { src: kiss_image, alt: "Jonas and Andy kissing after getting engaged" },
+  ];
 </script>
 
 <svelte:head>
@@ -48,11 +55,7 @@
     Somerset.
   </h1>
 
-  <div class="photo-grid">
-    <img src={smiling_image} alt="Jonas and Andy smiling" />
-    <img src={ring_image} alt="The wedding ring on Jonas' finger" />
-    <img src={kiss_image} alt="Jonas and Andy kissing after getting engaged" />
-  </div>
+  <PhotoGrid {photos} />
 </div>
 
 <TextColumn>
@@ -111,18 +114,5 @@
     font-weight: 500;
     font-size: 1.7rem;
     margin-bottom: 10vh;
-  }
-
-  .photo-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-
-  .photo-grid > img {
-    width: 100%;
-    height: auto;
-    border-radius: 0.5rem;
-    object-fit: cover;
   }
 </style>
