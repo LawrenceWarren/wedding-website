@@ -1,11 +1,35 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
+  import "/src/styles/index.css";
+  import favicon from "$lib/assets/favicon.ico";
 
-	let { children } = $props();
+  let innerWidth = $state(0);
+  const is_mobile_device = $derived(innerWidth < 600 ? true : false);
+
+  $effect(() => {
+    console.log(is_mobile_device);
+    console.log(innerWidth);
+  });
+
+  let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+  <link rel="icon" href={favicon} />
 </svelte:head>
 
-{@render children?.()}
+<svelte:window bind:innerWidth />
+
+<main>
+  {@render children?.()}
+</main>
+
+<style>
+  main {
+    padding-bottom: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+</style>

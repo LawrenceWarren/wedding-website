@@ -1,0 +1,93 @@
+:root {
+  --bg-color: #f7f6fa;
+  /*--bg-color: #faf9f6;*/
+  --primary-color: hsl(360, 80%, 45%);
+  --secondary-color: hsl(360, 80%, 30%);
+  --highlight-color: hsl(360, 80%, 60%);
+  --font-color: #121212;
+  --font-light: #faf9f6;
+}
+
+.fancy {
+  font-family: "adobe-caslon-pro";
+  justify-content: center; /* centers items horizontally */
+  align-items: center; /* centers items vertically */
+}
+
+h1.banner,
+h2.banner {
+  color: var(--font-light);
+  margin: 0;
+  margin-bottom: 5vw;
+}
+
+h1.banner {
+  padding: 0;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+a.banner {
+  display: inline-block;
+  color: var(--font-light);
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1rem;
+  border: 1px solid var(--bg-color);
+  padding: 2vh 5vw; /* lots of padding (adjust as needed) */
+}
+
+p,
+b,
+a,
+li,
+h1,
+h2,
+h3,
+label,
+legend,
+input {
+  font-family: "Cormorant Garamond", "Poppins";
+}
+
+a {
+  color: var(--font-color);
+}
+
+h1,
+h2 {
+  font-style: normal;
+  color: var(--font-color);
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+p,
+i,
+a,
+b,
+li {
+  font-size: 1.2rem;
+}
+
+body {
+  background-color: var(--bg-color);
+}
