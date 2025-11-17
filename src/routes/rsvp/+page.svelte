@@ -103,6 +103,19 @@
   ];
 
   let full_name = "";
+  let show_suggestions = false;
+
+  // Derived filtered list
+  $: filtered_names =
+    full_name.trim().length === 0
+      ? []
+      : names.filter((n) => n.toLowerCase().includes(full_name.toLowerCase()));
+
+  function select_name(name: string) {
+    full_name = name;
+    show_suggestions = false;
+  }
+
   let email = "";
   let phone = "";
 
@@ -260,6 +273,21 @@
       console.error(err);
     }
   }
+
+  let blur_timeout: number | null = null;
+
+  function handle_name_input_gain_focus() {
+    if (blur_timeout) {
+      clearTimeout(blur_timeout);
+    }
+    show_suggestions = true;
+  }
+
+  function handle_name_input_lose_focus() {
+    blur_timeout = setTimeout(() => {
+      show_suggestions = false;
+    }, 100);
+  }
 </script>
 
 <svelte:head>
@@ -294,14 +322,28 @@
       <div role="alert" class="error">{form_error}</div>
     {/if}
 
-    <div class="form-group">
+    <div class="form-group autocomplete">
       <label class="legend_label" for="full_name">Name</label>
-      <select id="full_name" bind:value={full_name} required>
-        <option value="">Select a name</option>
-        {#each names as name}
-          <option value={name}>{name}</option>
-        {/each}
-      </select>
+
+      <input
+        id="full_name"
+        type="text"
+        bind:value={full_name}
+        placeholder="Start typing your name…"
+        autocomplete="off"
+        required
+        on:focus={handle_name_input_gain_focus}
+        on:blur={handle_name_input_lose_focus}
+        on:input={() => (show_suggestions = true)}
+      />
+
+      {#if show_suggestions && filtered_names.length > 0}
+        <ul class="suggestions">
+          {#each filtered_names as name}
+            <li on:click={() => select_name(name)}>{name}</li>
+          {/each}
+        </ul>
+      {/if}
     </div>
     <div class="form-group">
       <label class="legend_label" for="email">Email address</label>
@@ -557,7 +599,6 @@
   }
 
   input:not([type="radio"]):not([type="checkbox"]),
-  select,
   textarea,
   button {
     margin-top: 0.25rem;
@@ -584,18 +625,7 @@
     resize: vertical;
   }
 
-  select {
-    width: 100%;
-    appearance: none; /* removes inconsistent native arrows */
-  }
-
-  input[type="time"] {
-    width: 100%; /* compact size */
-    height: 1.5rem;
-  }
-
   input:focus,
-  select:focus,
   textarea:focus {
     border-color: var(--primary-color); /* TODO: Choose primary color */
     outline: none;
@@ -603,33 +633,8 @@
   }
 
   input:hover,
-  select:hover,
   textarea:hover {
     border-color: var(--secondary-color);
-  }
-
-  .nested-group {
-    margin-top: 0.5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-  }
-
-  .nested-group label {
-    display: flex;
-    flex-direction: column;
-  }
-
-  fieldset > .nested-group {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
-  fieldset > .nested-group label {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    font-weight: 500;
-    font-style: italic;
   }
 
   .form-actions {
@@ -662,5 +667,36 @@
     color: #555; /* you can change this to fit your theme */
     margin-top: 0.25rem;
     margin-bottom: 0.5rem;
+  }
+
+  .autocomplete {
+    position: relative;
+  }
+
+  .suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 20;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .suggestions li {
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+  }
+
+  .suggestions li:hover {
+    background-color: var(--highlight-color);
+    color: white;
   }
 </style>
