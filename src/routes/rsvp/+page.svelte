@@ -114,7 +114,7 @@
   let accommodation: "yes" | "no" | "" = "";
   let accommodation_comments = "";
 
-  let meal: "beef" | "aubergine" | "" = "";
+  let meal: "beef" | "aubergine" | "kids" | "" = "";
 
   let dietary_other = "";
   let selected_common: Record<string, boolean> = {};
@@ -419,6 +419,15 @@
             checked={meal === "aubergine"}
           />Aubergine Parmigana Rolls with Spinach & Ricotta served with Tomato
           Compote and Pan-Fried Gnocchi</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="meal"
+            value="kids"
+            on:change={() => (meal = "kids")}
+            checked={meal === "kids"}
+          />Kids meal (below the age of 12)</label
         >
       </fieldset>
 

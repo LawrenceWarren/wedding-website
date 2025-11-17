@@ -38,6 +38,15 @@
   </ul>
 
   <p>
+    Some rooms have space for additional beds to be set up, subject to
+    availability.
+  </p>
+  <ul>
+    <li>Folding (Z beds) are £60 per person for both nights</li>
+    <li>Travel cots are £25 for both nights</li>
+  </ul>
+
+  <p>
     This price covers accommodation, continental breakfast for both mornings,
     and access to all of the facilities at North Cadbury Court such as:
   </p>
@@ -71,19 +80,6 @@
     We will confirm your room as soon as we can after receiving your RSVP. After
     confirming the room, we will send you the bank details so you can make a
     transfer. If anything changes, please let us know.
-  </p>
-
-  <p>
-    Some rooms have space for additional beds to be set up, subject to
-    availability.
-  </p>
-  <ul>
-    <li>Folding (Z beds) are £60 per person for both nights</li>
-    <li>Travel cots are £25 for both nights</li>
-  </ul>
-  <p>
-    If you are interested in this, please let us know in your RSVP or message
-    us.
   </p>
 </TextColumn>
 
