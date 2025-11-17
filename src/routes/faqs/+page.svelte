@@ -57,26 +57,7 @@
   <p>
     No. We would love for you to stay at the venue so we can spend as much time
     together enjoying the activities, but understand this may not be possible
-    for everyone. Please see the accommodation page for other options.
-  </p>
-  <p>
-    <a href="/accommodation">Please see the accommodation page</a> for a range of
-    options.
-  </p>
-
-  <h2>Are there any rooms that have space for more than two people?</h2>
-
-  <p>
-    Yes. Some rooms have space for additional beds to be set up, subject to
-    availability.
-  </p>
-  <ul>
-    <li>Folding (Z beds) are £60 per person for both nights</li>
-    <li>Travel cots are £25 for both nights</li>
-  </ul>
-  <p>
-    If you are interested in this, please let us know in your RSVP or message
-    us.
+    for everyone.
   </p>
 
   <h2>Can I bring additional guests or plus ones?</h2>
