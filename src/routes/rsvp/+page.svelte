@@ -281,7 +281,15 @@
 </ImageBanner>
 
 <TextColumn>
-  <p>We look forward to seeing you! Fill out the form below.</p>
+  <p>
+    We're looking forward to celebrating together. Please use the form below to
+    RSVP individually.
+  </p>
+
+  <p>
+    For information on accommodation, travel, attire, gifts, and FAQs, please
+    use the menu in the top left of each page.
+  </p>
 </TextColumn>
 
 {#if !submitted && !past_success}
@@ -589,11 +597,6 @@
     appearance: none; /* removes inconsistent native arrows */
   }
 
-  input[type="time"] {
-    width: 100%; /* compact size */
-    height: 1.5rem;
-  }
-
   input:focus,
   select:focus,
   textarea:focus {
@@ -606,30 +609,6 @@
   select:hover,
   textarea:hover {
     border-color: var(--secondary-color);
-  }
-
-  .nested-group {
-    margin-top: 0.5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-  }
-
-  .nested-group label {
-    display: flex;
-    flex-direction: column;
-  }
-
-  fieldset > .nested-group {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
-  fieldset > .nested-group label {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    font-weight: 500;
-    font-style: italic;
   }
 
   .form-actions {
