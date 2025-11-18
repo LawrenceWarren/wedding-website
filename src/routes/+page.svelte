@@ -59,9 +59,15 @@
 </div>
 
 <TextColumn>
+  <p>We are really looking forward to celebrating our wedding with you.</p>
+
+  <b
+    >For information on accommodation, travel, attire, gifts, and FAQs, please
+    use the menu in the top left of each page.
+  </b>
+
   <h1>Timeline</h1>
 
-  <p>We are really looking forward to celebrating our wedding with you.</p>
   <p>
     We have exclusive use of North Cadbury Court from 1pm on Monday 10th August
     to 2pm on Wednesday 12th August.

@@ -38,6 +38,15 @@
   </ul>
 
   <p>
+    Some rooms have space for additional beds to be set up, subject to
+    availability.
+  </p>
+  <ul>
+    <li>Folding (Z beds) are £60 per person for both nights</li>
+    <li>Travel cots are £25 for both nights</li>
+  </ul>
+
+  <p>
     This price covers accommodation, continental breakfast for both mornings,
     and access to all of the facilities at North Cadbury Court such as:
   </p>
@@ -53,8 +62,8 @@
   <h3>How to book a room</h3>
 
   <p>
-    The venue does not have a booking website, so please let us know
-    in your RSVP whether you would like to book a room.
+    The venue does not have a booking website, so please let us know in your
+    RSVP whether you would like to book a room.
   </p>
 
   <p>
@@ -72,32 +81,6 @@
     confirming the room, we will send you the bank details so you can make a
     transfer. If anything changes, please let us know.
   </p>
-
-  <h2>Alternative accommodation</h2>
-
-  <p>
-    If you are unable to stay at the venue but would still like to be nearby, we
-    have provided some alternative options below. Please note, offsite guests
-    are unable to stay at the venue beyond midnight.
-  </p>
-
-  <h3>The Queens Arms, Corton Denham</h3>
-  <ul>
-    <li>Country pub B&B</li>
-    <li>3.5 miles from North Cadbury Court</li>
-    <li><a href="https://www.thequeensarms.com/">Link to website</a></li>
-  </ul>
-
-  <h3>Travelodge, Wincanton</h3>
-
-  <ul>
-    <li>7.3 miles from North Cadbury Court</li>
-    <li>
-      <a href="https://www.travelodge.co.uk/hotels/561/Wincanton-hotel">
-        Link to website
-      </a>
-    </li>
-  </ul>
 </TextColumn>
 
 <BurgerMenu />

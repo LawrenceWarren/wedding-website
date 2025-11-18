@@ -11,8 +11,7 @@ async function send_rsvp(submitted_data) {
       email,
       phone,
       attendance,
-      arrive,
-      leave,
+      partialAttendanceNotes,
       accommodation,
       accommodationComments,
       meal,
@@ -22,22 +21,25 @@ async function send_rsvp(submitted_data) {
 
     const result = await sql`
       INSERT INTO wedding_rsvps (
-        full_name, email, phone, attendance,
-        arrival_date, arrival_time, leave_date, leave_time,
-        accommodation, accommodation_comments, meal,
-        dietary_requirements, coach
+        full_name,
+        email,
+        phone,
+        attendance,
+        partial_attendance_notes,
+        accommodation,
+        accommodation_comments,
+        meal,
+        dietary_requirements,
+        coach
       )
       VALUES (
         ${full_name},
         ${email},
         ${phone},
         ${attendance},
-        ${arrive?.date || null},
-        ${arrive?.time || null},
-        ${leave?.date || null},
-        ${leave?.time || null},
+        ${partialAttendanceNotes || null},
         ${accommodation},
-        ${accommodationComments},
+        ${accommodationComments || null},
         ${meal},
         ${
           dietaryRequirements ? JSON.stringify(dietaryRequirements) : null
@@ -65,7 +67,7 @@ async function send_rsvp(submitted_data) {
           error:
             "An RSVP for this name already exists. Please contact us if you need to make changes.",
         },
-        { status: 409 } // 409 Conflict
+        { status: 409 }
       );
     }
 

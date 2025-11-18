@@ -6,17 +6,14 @@ CREATE TABLE IF NOT EXISTS wedding_rsvps (
 
   attendance TEXT CHECK (attendance IN ('yes_whole', 'yes_some', 'no')) NOT NULL,
 
-  arrival_date DATE,
-  arrival_time TIME,
-  leave_date DATE,
-  leave_time TIME,
+  partial_attendance_notes TEXT,
 
   accommodation TEXT CHECK (accommodation IN ('yes', 'no')),
   accommodation_comments TEXT,
 
   meal TEXT CHECK (meal IN ('beef', 'aubergine')),
 
-  dietary_requirements JSONB,  -- e.g. ["Vegan", "Gluten free", "No onions"]
+  dietary_requirements JSONB,
 
   coach TEXT CHECK (coach IN ('yes', 'no')),
 

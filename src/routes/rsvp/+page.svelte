@@ -5,7 +5,6 @@
   import header_img from "$lib/assets/kiss-landscape.webp";
 
   import { fade } from "svelte/transition";
-  import { goto } from "$app/navigation";
   import { onMount } from "svelte";
 
   const names = [
@@ -110,16 +109,12 @@
   type Attendance = "yes_whole" | "yes_some" | "no" | "";
   let attendance: Attendance = "";
 
-  // Structured arrival/leaving info for "Yes (some)"
-  let arrival_date = "";
-  let arrival_time = "";
-  let leave_date = "";
-  let leave_time = "";
+  let partial_attendance_notes = "";
 
   let accommodation: "yes" | "no" | "" = "";
   let accommodation_comments = "";
 
-  let meal: "beef" | "aubergine" | "" = "";
+  let meal: "beef" | "aubergine" | "kids" | "" = "";
 
   let dietary_other = "";
   let selected_common: Record<string, boolean> = {};
@@ -133,13 +128,17 @@
   let submitted_data: any = null;
   let form_error = "";
 
-  const COMMON_DIETARY_REQUIREMENTS = ["Vegan", "Vegetarian", "Gluten free"];
+  let none_selected = false;
 
-  const AVAILABLE_DATES = [
-    { label: "10 August 2026", value: "2026-08-10" },
-    { label: "11 August 2026", value: "2026-08-11" },
-    { label: "12 August 2026", value: "2026-08-12" },
-  ];
+  // When "None" is checked, clear other fields
+  function handle_none_change() {
+    if (none_selected) {
+      selected_common = {};
+      dietary_other = "";
+    }
+  }
+
+  const COMMON_DIETARY_REQUIREMENTS = ["Vegan", "Vegetarian", "Gluten free"];
 
   onMount(() => {
     const url = new URL(window.location.href);
@@ -164,22 +163,10 @@
       return (form_error = "Please select your attendance option."), false;
 
     if (attendance === "yes_some") {
-      if (!arrival_date || !arrival_time || !leave_date || !leave_time) {
-        return (
-          (form_error =
-            "Please select both arrival and leaving dates and times."),
-          false
-        );
-      }
-
-      const arrive_dt = new Date(`${arrival_date}T${arrival_time}`);
-      const leave_dt = new Date(`${leave_date}T${leave_time}`);
-
-      if (leave_dt <= arrive_dt) {
-        return (
-          (form_error = "Leaving date/time must be after arrival date/time."),
-          false
-        );
+      if (!partial_attendance_notes.trim()) {
+        form_error =
+          "Please let us know roughly when you'll be arriving and leaving.";
+        return false;
       }
     }
 
@@ -225,14 +212,8 @@
       email,
       phone,
       attendance,
-      arrive:
-        attendance === "yes_some"
-          ? { date: arrival_date, time: arrival_time }
-          : null,
-      leave:
-        attendance === "yes_some"
-          ? { date: leave_date, time: leave_time }
-          : null,
+      partialAttendanceNotes:
+        attendance === "yes_some" ? partial_attendance_notes || null : null,
       accommodation:
         attendance === "yes_whole" || attendance === "yes_some"
           ? accommodation
@@ -300,7 +281,15 @@
 </ImageBanner>
 
 <TextColumn>
-  <p>We look forward to seeing you! Fill out the form below.</p>
+  <p>
+    We're looking forward to celebrating together. Please use the form below to
+    RSVP individually.
+  </p>
+
+  <p>
+    For information on accommodation, travel, attire, gifts, and FAQs, please
+    use the menu in the top left of each page.
+  </p>
 </TextColumn>
 
 {#if !submitted && !past_success}
@@ -349,37 +338,22 @@
           value="yes_some"
           on:change={() => (attendance = "yes_some")}
           checked={attendance === "yes_some"}
-        /> Yes (some)</label
+        /> Yes (some of the events)</label
       >
       {#if attendance === "yes_some"}
-        <div class="nested-group">
-          <label>
-            Arrival date
-            <select bind:value={arrival_date}>
-              <option value="">Select date</option>
-              {#each AVAILABLE_DATES as d}
-                <option value={d.value}>{d.label}</option>
-              {/each}
-            </select>
-          </label>
-          <label>
-            Approximate arrival hour
-            <input type="time" bind:value={arrival_time} />
-          </label>
-          <label>
-            Leaving date
-            <select bind:value={leave_date}>
-              <option value="">Select date</option>
-              {#each AVAILABLE_DATES as d}
-                <option value={d.value}>{d.label}</option>
-              {/each}
-            </select>
-          </label>
-          <label>
-            Approximate departure hour
-            <input type="time" bind:value={leave_time} />
-          </label>
-        </div>
+        <p class="note">
+          Please let us know roughly when you expect to arrive and leave. You
+          can write anything helpful in the box below.
+        </p>
+
+        <label>
+          Arrival / departure details
+          <textarea
+            bind:value={partial_attendance_notes}
+            placeholder="e.g. Arriving Monday late afternoon, leaving Tuesday after lunch"
+            rows={4}
+          ></textarea>
+        </label>
       {/if}
       <label
         ><input
@@ -454,19 +428,46 @@
           />Aubergine Parmigana Rolls with Spinach & Ricotta served with Tomato
           Compote and Pan-Fried Gnocchi</label
         >
+        <label
+          ><input
+            type="radio"
+            name="meal"
+            value="kids"
+            on:change={() => (meal = "kids")}
+            checked={meal === "kids"}
+          />Kids meal (below the age of 12)</label
+        >
       </fieldset>
 
       <fieldset>
         <legend>Please let us know of any dietary requirements</legend>
+
+        <label>
+          <input
+            type="checkbox"
+            bind:checked={none_selected}
+            on:change={handle_none_change}
+          />
+          None
+        </label>
+
         {#each COMMON_DIETARY_REQUIREMENTS as item}
           <label
-            ><input type="checkbox" bind:checked={selected_common[item]} />
+            ><input
+              type="checkbox"
+              disabled={none_selected}
+              bind:checked={selected_common[item]}
+            />
             {item}</label
           >
         {/each}
         <label>
-          Other (please specify)
-          <input placeholder="Please specify" bind:value={dietary_other} />
+          Other
+          <input
+            placeholder="Please specify"
+            disabled={none_selected}
+            bind:value={dietary_other}
+          />
         </label>
       </fieldset>
 
@@ -596,11 +597,6 @@
     appearance: none; /* removes inconsistent native arrows */
   }
 
-  input[type="time"] {
-    width: 100%; /* compact size */
-    height: 1.5rem;
-  }
-
   input:focus,
   select:focus,
   textarea:focus {
@@ -613,30 +609,6 @@
   select:hover,
   textarea:hover {
     border-color: var(--secondary-color);
-  }
-
-  .nested-group {
-    margin-top: 0.5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-  }
-
-  .nested-group label {
-    display: flex;
-    flex-direction: column;
-  }
-
-  fieldset > .nested-group {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
-  fieldset > .nested-group label {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    font-weight: 500;
-    font-style: italic;
   }
 
   .form-actions {

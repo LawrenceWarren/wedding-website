@@ -112,7 +112,7 @@
   <PhotoGrid photos={ceremony_photos} />
 
   <p>
-    For the rest of the time, please feel free to where whatever you feel
+    For the rest of the time, please feel free to wear whatever you feel
     comfortable in.
   </p>
 </TextColumn>
