@@ -8,6 +8,7 @@
   import { onMount } from "svelte";
 
   const names = [
+    "Adam Russ",
     "Ahlen Lavaro",
     "Alexa Karnickis",
     "Andy George",
@@ -18,6 +19,7 @@
     "Caitlin Thompson",
     "Caroline Dent",
     "Cecille Pantaleon",
+    "Charlie Parrott",
     "Charlie Peet",
     "Chhaya Tank",
     "Chris George",
@@ -58,6 +60,7 @@
     "Jonel Alegre",
     "Joseph Pantaleon",
     "Josh Pantaleon",
+    "June Ponce",
     "Kenan Redif",
     "Laurence Dicks",
     "Lawrence Warren",

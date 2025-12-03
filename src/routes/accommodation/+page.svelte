@@ -56,6 +56,7 @@
     <li>Sauna</li>
     <li>3-hole golf course</li>
     <li>Squash and tennis courts</li>
+    <li>Gym</li>
     <li>Plus more!</li>
   </ul>
 
