@@ -102,11 +102,13 @@
     </li>
   </ul>
 
-  <h2>Ceremony</h2>
+  <h2>Wedding ceremony and party</h2>
 
   <p>
-    Please dress in suits or long dresses. Bright and summery for (fingers
-    crossed) an outdoor wedding.
+    We'd love to see everyone in colourful formal outfits to match the summer
+    vibe. Suits, dresses, jumpsuits, playsuits, and smart trousers are all
+    welcome. One request: no short dresses, please — we're going for a more
+    formal feel.
   </p>
 
   <PhotoGrid photos={ceremony_photos} />
