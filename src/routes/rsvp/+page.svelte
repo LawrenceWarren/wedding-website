@@ -436,6 +436,7 @@
   :root {
     --sv-border-radius: 6px;
     --sv-min-height: 2.5rem; /* fixes Safari iOS */
+    --sv-placeholder-color: #656568;
   }
 
   :global(.svelecte) {
