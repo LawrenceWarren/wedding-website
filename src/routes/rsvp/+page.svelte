@@ -2,110 +2,14 @@
   import BurgerMenu from "$lib/components/burger_menu.svelte";
   import ImageBanner from "$lib/components/image_banner.svelte";
   import TextColumn from "$lib/components/text_column.svelte";
+  import Autocomplete from "$lib/components/autocomplete.svelte";
   import header_img from "$lib/assets/kiss-landscape.webp";
+  import { NAMES } from "./names";
 
   import { fade } from "svelte/transition";
   import { onMount } from "svelte";
 
-  const names = [
-    "Adam Russ",
-    "Ahlen Lavaro",
-    "Alexa Karnickis",
-    "Andy George",
-    "Anne Diangson",
-    "Arch Diangson",
-    "Audrey Butler",
-    "Brea Priestly",
-    "Caitlin Thompson",
-    "Caroline Dent",
-    "Cecille Pantaleon",
-    "Charlie Parrott",
-    "Charlie Peet",
-    "Chhaya Tank",
-    "Chris George",
-    "Christine Labonete",
-    "Claire Brown",
-    "Claryn Labonete",
-    "Dan Warr",
-    "Darcey Bates",
-    "Darian Graham",
-    "David Butler",
-    "David Purton",
-    "Ella Hutchinson",
-    "Ella Jackson",
-    "Emilia Butler",
-    "Emily Jacobs",
-    "Emmanuel Hale",
-    "Estella Meachin-Taylor",
-    "Findlay Lennie",
-    "Gemma Dyer",
-    "Helen Butler",
-    "Ivan Apiado",
-    "Jack Brown",
-    "Jai Patel",
-    "Jaina Tank",
-    "Jamie Tipple",
-    "Janet Dent",
-    "Jasmine Pantaleon",
-    "Jem Pantaleon",
-    "Jenna Holtom",
-    "Jess Purton",
-    "Jessica Pantaleon",
-    "Joe Butler",
-    "Joe Tibbles",
-    "John Goodhead",
-    "Jon Brown",
-    "Jonas Pantaleon",
-    "Jonee Doronilla",
-    "Jonel Alegre",
-    "Joseph Pantaleon",
-    "Josh Pantaleon",
-    "June Ponce",
-    "Kenan Redif",
-    "Laurence Dicks",
-    "Lawrence Warren",
-    "Leah Butler",
-    "Lori Purton",
-    "Lottie Brown",
-    "Luana Frank",
-    "Lucie Beaumont",
-    "Luke Priestly",
-    "Maria Thea Magnayon",
-    "Marnelli Magnayon",
-    "Martin George",
-    "Mary Panganiban",
-    "Mary Purton",
-    "Masiey Greenhow",
-    "Matteo Magnayon",
-    "Mia Bartolomucci",
-    "Mike Dent",
-    "Nabil Kandar",
-    "Olivia Diangson",
-    "Oscar Brown",
-    "Pamela Pantaleon",
-    "Pauline Pantaleon",
-    "Reyn Apiado",
-    "Rodrigo Diangson",
-    "Ron Deivid Magnayon",
-    "Sam Mansfield",
-    "Sophie Batchelor",
-    "Tarah Butler",
-    "Terrell Alegre",
-    "Terry Alegre",
-    "Tom Gelling",
-    "Vadims Karnickis",
-    "Valermia Pantaleon",
-    "Victoria Fletcher",
-    "Vina Pantaleon",
-    "Vince Doronilla",
-    "Will Flack",
-    "Will Jones",
-    "Zachariah Redif",
-    "Zak Doronilla",
-    "Zephyr Redif",
-  ];
-
-  let full_name = "";
+  let full_name: string | null = null;
   let email = "";
   let phone = "";
 
@@ -154,7 +58,7 @@
 
   function validate() {
     form_error = "";
-    if (!full_name.trim())
+    if (full_name == null || !full_name.trim())
       return (form_error = "Please select your name."), false;
     if (!email.trim())
       return (form_error = "Please enter your email address."), false;
@@ -307,12 +211,7 @@
 
     <div class="form-group">
       <label class="legend_label" for="full_name">Name</label>
-      <select id="full_name" bind:value={full_name} required>
-        <option value="">Select a name</option>
-        {#each names as name}
-          <option value={name}>{name}</option>
-        {/each}
-      </select>
+      <Autocomplete bind:value={full_name} options={NAMES} />
     </div>
     <div class="form-group">
       <label class="legend_label" for="email">Email address</label>
@@ -534,6 +433,16 @@
 <BurgerMenu />
 
 <style>
+  :root {
+    --sv-border-radius: 6px;
+    --sv-min-height: 2.5rem; /* fixes Safari iOS */
+    --sv-placeholder-color: #656568;
+  }
+
+  :global(.svelecte) {
+    font-family: "Cormorant Garamond", "Poppins";
+  }
+
   .form-container {
     width: clamp(0px, 750px, 87vw);
     max-width: 700px;
@@ -568,7 +477,6 @@
   }
 
   input:not([type="radio"]):not([type="checkbox"]),
-  select,
   textarea,
   button {
     margin-top: 0.25rem;
@@ -595,13 +503,7 @@
     resize: vertical;
   }
 
-  select {
-    width: 100%;
-    appearance: none; /* removes inconsistent native arrows */
-  }
-
   input:focus,
-  select:focus,
   textarea:focus {
     border-color: var(--primary-color); /* TODO: Choose primary color */
     outline: none;
@@ -609,7 +511,6 @@
   }
 
   input:hover,
-  select:hover,
   textarea:hover {
     border-color: var(--secondary-color);
   }
