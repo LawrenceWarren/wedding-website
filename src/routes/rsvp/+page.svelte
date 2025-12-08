@@ -435,6 +435,7 @@
 <style>
   :root {
     --sv-border-radius: 6px;
+    --sv-min-height: 2.5rem; /* fixes Safari iOS */
   }
 
   :global(.svelecte) {
