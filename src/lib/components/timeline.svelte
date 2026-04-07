@@ -8,7 +8,7 @@
       date: "August 10th",
       events: [
         { time: "1:00pm", event: "Check in opens" },
-        { time: "5:00pm", event: "Filipino welcome dinner" },
+        { time: "5:30pm", event: "Filipino welcome dinner" },
         { time: "8:30pm", event: "Games night" },
       ],
     },
@@ -16,17 +16,17 @@
       date: "August 11th",
       events: [
         {
-          time: "2:00pm",
+          time: "1:45pm",
           event:
-            "Wedding Ceremony (to be seated by 2:30pm) with reception to follow",
+            "Wedding Ceremony (to be seated by 2:00pm) with reception to follow",
         },
       ],
     },
     {
       date: "August 12th",
       events: [
-        { time: "11:30am-1:00pm", event: "Farewell pizza lunch" },
-        { time: "2:00pm", event: "Check out closes" },
+        { time: "11:00am-12:30pm", event: "Farewell pizza lunch" },
+        { time: "1:00pm", event: "Check out closes" },
       ],
     },
   ];
