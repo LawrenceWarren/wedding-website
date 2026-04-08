@@ -73,14 +73,15 @@
 
   <ul>
     <li>
-      <a href="https://mestizafilipina.co/collections/barong-tagalog"
-        >Barong Tagalog</a
+      <a
+        href="https://mestizafilipina.co/collections/barong-tagalog"
+        target="_blank">Barong Tagalog</a
       >
     </li>
     <li>
       <a
         href="https://mestizafilipina.co/collections/modern-filipiniana-mestiza-boleros"
-        >Bolero Filipiniana</a
+        target="_blank">Bolero Filipiniana</a
       >
     </li>
   </ul>
@@ -91,13 +92,15 @@
 
   <ul>
     <li>
-      <a href="https://barongworld.com/collections/pina-cocoon-barong"
-        >Barong Tagalog</a
+      <a
+        href="https://barongworld.com/collections/pina-cocoon-barong"
+        target="_blank">Barong Tagalog</a
       >
     </li>
     <li>
-      <a href="https://barongworld.com/collections/bolero-filipiniana"
-        >Bolero Filipiniana</a
+      <a
+        href="https://barongworld.com/collections/bolero-filipiniana"
+        target="_blank">Bolero Filipiniana</a
       >
     </li>
   </ul>
@@ -106,8 +109,9 @@
 
   <ul>
     <li>
-      <a href="https://m.shein.co.uk/pdsearch/Filipiniana%20Bolero"
-        >Bolero Filipiniana</a
+      <a
+        href="https://m.shein.co.uk/pdsearch/Filipiniana%20Bolero"
+        target="_blank">Bolero Filipiniana</a
       >
     </li>
   </ul>
