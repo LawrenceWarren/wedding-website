@@ -45,6 +45,11 @@
     celebrations!
   </p>
 
+  <p>
+    Below are some ideas on what to wear at a couple of the events, but the
+    whole time please wear whatever you feel comfortable in.
+  </p>
+
   <h2>Filipino Welcome Dinner</h2>
 
   <p>
@@ -126,11 +131,6 @@
   </p>
 
   <PhotoGrid photos={ceremony_photos} />
-
-  <p>
-    For the rest of the time, please feel free to wear whatever you feel
-    comfortable in.
-  </p>
 </TextColumn>
 
 <BurgerMenu />
