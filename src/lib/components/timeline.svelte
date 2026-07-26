@@ -20,12 +20,20 @@
           event:
             "Wedding Ceremony (to be seated by 2:00pm) with reception to follow",
         },
+        {
+          time: "4:30pm",
+          event: "Wedding breakfast",
+        },
+        {
+          time: "8:00pm",
+          event: "First dance",
+        },
       ],
     },
     {
       date: "August 12th",
       events: [
-        { time: "11:00am-12:30pm", event: "Farewell pizza lunch" },
+        { time: "11:30am", event: "Farewell pizza lunch" },
         { time: "1:00pm", event: "Check out closes" },
       ],
     },
