@@ -68,6 +68,15 @@
     invitation.
   </p>
 
+  <h2>Can I take photos during the ceremony?</h2>
+
+  <p>
+    We're going unplugged for the ceremony - please keep phones and cameras
+    off and away during the ceremony so you can be fully in the moment with us.
+    Our photographers have it covered, and we'll share the photos with you as
+    soon as they are available!
+  </p>
+
   <h2>Who should I contact if I have any further questions?</h2>
 
   <p>Please contact us with any more queries!</p>

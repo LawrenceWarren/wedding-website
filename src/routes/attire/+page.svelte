@@ -55,7 +55,8 @@
   <p>
     We would love for you to dress in traditional cream Filipino wedding attire,
     which is Barong Tagalog (usually worn on top of a cream/white T-shirt or
-    vest) and Bolero Filipinianas (usually worn on top of a cream/white outfit).
+    vest with black trousers) and Bolero Filipinianas (usually worn on top of a
+    cream/white outfit).
   </p>
 
   <PhotoGrid photos={filipino_photos} />
