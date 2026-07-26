@@ -22,7 +22,7 @@
         },
         {
           time: "4:30pm",
-          event: "Wedding breakfast",
+          event: "Wedding dinner",
         },
         {
           time: "8:00pm",
