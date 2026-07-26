@@ -71,7 +71,7 @@
   <h2>Can I take photos during the ceremony?</h2>
 
   <p>
-    A: We're going unplugged for the ceremony - please keep phones and cameras
+    We're going unplugged for the ceremony - please keep phones and cameras
     off and away during the ceremony so you can be fully in the moment with us.
     Our photographers have it covered, and we'll share the photos with you as
     soon as they are available!
